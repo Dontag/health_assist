@@ -8,42 +8,42 @@
     <title>Thememinister Health Admin panel</title>
 
     <!-- Favicon and touch icons -->
-    <link rel="shortcut icon" href="assets/dist/img/ico/favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="assets/admin_page/dist/img/ico/favicon.png" type="image/x-icon">
    <!-- Start Global Mandatory Style
    =====================================================================-->
    <!-- jquery-ui css -->
-   <link href="assets/plugins/jquery-ui-1.12.1/jquery-ui.min.css" rel="stylesheet" type="text/css"/>
+   <link href="assets/admin_page/plugins/jquery-ui-1.12.1/jquery-ui.min.css" rel="stylesheet" type="text/css"/>
    <!-- Bootstrap -->
-   <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+   <link href="assets/admin_page/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
    <!-- Bootstrap rtl -->
-   <!--<link href="assets/bootstrap-rtl/bootstrap-rtl.min.css" rel="stylesheet" type="text/css"/>-->
+   <!--<link href="assets/admin_page/bootstrap-rtl/bootstrap-rtl.min.css" rel="stylesheet" type="text/css"/>-->
    <!-- Lobipanel css -->
-   <link href="assets/plugins/lobipanel/lobipanel.min.css" rel="stylesheet" type="text/css"/>
+   <link href="assets/admin_page/plugins/lobipanel/lobipanel.min.css" rel="stylesheet" type="text/css"/>
    <!-- Pace css -->
-   <link href="assets/plugins/pace/flash.css" rel="stylesheet" type="text/css"/>
+   <link href="assets/admin_page/plugins/pace/flash.css" rel="stylesheet" type="text/css"/>
    <!-- Font Awesome -->
-   <link href="assets/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
+   <link href="assets/admin_page/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
    <!-- Pe-icon -->
-   <link href="assets/pe-icon-7-stroke/css/pe-icon-7-stroke.css" rel="stylesheet" type="text/css"/>
+   <link href="assets/admin_page/pe-icon-7-stroke/css/pe-icon-7-stroke.css" rel="stylesheet" type="text/css"/>
    <!-- Themify icons -->
-   <link href="assets/themify-icons/themify-icons.css" rel="stylesheet" type="text/css"/>
+   <link href="assets/admin_page/themify-icons/themify-icons.css" rel="stylesheet" type="text/css"/>
         <!-- End Global Mandatory Style
         =====================================================================-->
         <!-- Start page Label Plugins 
         =====================================================================-->
         <!-- Toastr css -->
-        <link href="assets/plugins/toastr/toastr.css" rel="stylesheet" type="text/css"/>
+        <link href="assets/admin_page/plugins/toastr/toastr.css" rel="stylesheet" type="text/css"/>
         <!-- Emojionearea -->
-        <link href="assets/plugins/emojionearea/emojionearea.min.css" rel="stylesheet" type="text/css"/>
+        <link href="assets/admin_page/plugins/emojionearea/emojionearea.min.css" rel="stylesheet" type="text/css"/>
         <!-- Monthly css -->
-        <link href="assets/plugins/monthly/monthly.css" rel="stylesheet" type="text/css"/>
+        <link href="assets/admin_page/plugins/monthly/monthly.css" rel="stylesheet" type="text/css"/>
         <!-- End page Label Plugins 
         =====================================================================-->
         <!-- Start Theme Layout Style
         =====================================================================-->
         <!-- Theme style -->
-        <link href="assets/dist/css/stylehealth.min.css" rel="stylesheet" type="text/css"/>
-        <!--<link href="assets/dist/css/stylehealth-rtl.css" rel="stylesheet" type="text/css"/>-->
+        <link href="assets/admin_page/dist/css/stylehealth.min.css" rel="stylesheet" type="text/css"/>
+        <!--<link href="assets/admin_page/admin_page/dist/css/stylehealth-rtl.css" rel="stylesheet" type="text/css"/>-->
         <!-- End Theme Layout Style
         =====================================================================-->
     </head>
@@ -54,11 +54,11 @@
                 <a href="index.html" class="logo"> <!-- Logo -->
                     <span class="logo-mini">
                         <!--<b>A</b>H-admin-->
-                        <img src="assets/dist/img/mini-logo.png" alt="">
+                        <img src="assets/admin_page/dist/img/mini-logo.png" alt="">
                     </span>
                     <span class="logo-lg">
                         <!--<b>Admin</b>H-admin-->
-                        <img src="assets/dist/img/logo.png" alt="">
+                        <img src="assets/admin_page/dist/img/logo.png" alt="">
                     </span>
                 </a>
                 <!-- Header Navbar -->
@@ -82,7 +82,7 @@
                                         <li ><!-- start Order -->
                                          <a href="index.html#" class="border-gray">
                                             <div class="pull-left">
-                                                <img src="assets/dist/img/stethescope.png" class="img-thumbnail" alt="User Image"></div>
+                                                <img src="assets/admin_page/dist/img/stethescope.png" class="img-thumbnail" alt="User Image"></div>
                                                 <h4>stethescope</h4>
                                                 <p><strong>total item:</strong> 21
                                                 </p>
@@ -91,7 +91,7 @@
                                         <li>
                                             <a href="index.html#" class="border-gray">
                                                 <div class="pull-left">
-                                                    <img src="assets/dist/img/nocontrol.png" class="img-thumbnail" alt="User Image"></div>
+                                                    <img src="assets/admin_page/dist/img/nocontrol.png" class="img-thumbnail" alt="User Image"></div>
                                                     <h4>Nocontrol</h4>
                                                     <p><strong>total item:</strong> 11
                                                     </p>
@@ -100,7 +100,7 @@
                                             <li>
                                                 <a href="index.html#" class="border-gray">
                                                     <div class="pull-left">
-                                                        <img src="assets/dist/img/lab.png" class="img-thumbnail" alt="User Image"></div>
+                                                        <img src="assets/admin_page/dist/img/lab.png" class="img-thumbnail" alt="User Image"></div>
                                                         <h4>lab</h4>
                                                         <p><strong>total item:</strong> 16
                                                         </p>
@@ -109,7 +109,7 @@
                                                 <li class="nav-list">
                                                     <a href="index.html#" class="border-gray">
                                                         <div class="pull-left">
-                                                            <img src="assets/dist/img/therm.jpg" class="img-thumbnail" alt="User Image"></div>
+                                                            <img src="assets/admin_page/dist/img/therm.jpg" class="img-thumbnail" alt="User Image"></div>
                                                             <h4>Pressure machine</h4>
                                                             <p><strong>total item:</strong> 10
                                                             </p>
@@ -135,7 +135,7 @@
                                             <li><!-- start message -->
                                                <a href="index.html#" class="border-gray">
                                                     <div class="pull-left">
-                                                    <img src="assets/dist/img/avatar2.png" class="img-thumbnail" alt="User Image"></div>
+                                                    <img src="assets/admin_page/dist/img/avatar2.png" class="img-thumbnail" alt="User Image"></div>
                                                     <h4>Alrazy</h4>
                                                     <p>Lorem Ipsum is simply dummy text of...
                                                     </p>
@@ -146,7 +146,7 @@
                                             <li>
                                                 <a href="index.html#" class="border-gray">
                                                     <div class="pull-left">
-                                                    <img src="assets/dist/img/avatar4.png" class="img-thumbnail" alt="User Image"></div>
+                                                    <img src="assets/admin_page/dist/img/avatar4.png" class="img-thumbnail" alt="User Image"></div>
                                                     <h4>Tanjil</h4>
                                                     <p>Lorem Ipsum is simply dummy text of...
                                                     </p>
@@ -157,7 +157,7 @@
                                             <li>
                                                 <a href="index.html#" class="border-gray">
                                                     <div class="pull-left">
-                                                    <img src="assets/dist/img/avatar3.png" class="img-thumbnail" alt="User Image"></div>
+                                                    <img src="assets/admin_page/dist/img/avatar3.png" class="img-thumbnail" alt="User Image"></div>
                                                     <h4>Jahir</h4>
                                                     <p>Lorem Ipsum is simply dummy text of...
                                                     </p>
@@ -168,7 +168,7 @@
                                             <li>
                                                <a href="index.html#" class="border-gray">
                                                     <div class="pull-left">
-                                                    <img src="assets/dist/img/avatar4.png" class="img-thumbnail" alt="User Image"></div>
+                                                    <img src="assets/admin_page/dist/img/avatar4.png" class="img-thumbnail" alt="User Image"></div>
                                                     <h4>Shawon</h4>
                                                     <p>Lorem Ipsum is simply dummy text of...
                                                     </p>
@@ -179,7 +179,7 @@
                                             <li>
                                                 <a href="index.html#" class="border-gray">
                                                     <div class="pull-left">
-                                                    <img src="assets/dist/img/avatar3.png" class="img-thumbnail" alt="User Image"></div>
+                                                    <img src="assets/admin_page/dist/img/avatar3.png" class="img-thumbnail" alt="User Image"></div>
                                                     <h4>Shipon</h4>
                                                     <p>Lorem Ipsum is simply dummy text of...
                                                     </p>
@@ -304,13 +304,13 @@
                             <li class="dropdown dropdown-user admin-user">
                                 <a href="index.html#" class="dropdown-toggle" data-toggle="dropdown"> 
                                 <div class="user-image">
-                                <img src="assets/dist/img/avatar4.png" class="img-circle" height="40" width="40" alt="User Image">
+                                <img src="assets/admin_page/dist/img/avatar4.png" class="img-circle" height="40" width="40" alt="User Image">
                                 </div>
                                 </a>
                                 <ul class="dropdown-menu">
-                                    <li><a href="http://healthadmin.thememinister.com/profile.html"><i class="fa fa-users"></i> User Profile</a></li>
+                                    <li><a href="profile.html"><i class="fa fa-users"></i> User Profile</a></li>
                                     <li><a href="index.html#"><i class="fa fa-gear"></i> Settings</a></li>
-                                    <li><a href="http://healthadmin.thememinister.com/login.html"><i class="fa fa-sign-out"></i> Logout</a></li>
+                                    <li><a href="login.html"><i class="fa fa-sign-out"></i> Logout</a></li>
                                 </ul>
                             </li>
                         </ul>
@@ -325,7 +325,7 @@
                     <!-- Sidebar user panel -->
                     <div class="user-panel">
                         <div class="image pull-left">
-                            <img src="assets/dist/img/avatar5.png" class="img-circle" alt="User Image">
+                            <img src="assets/admin_page/dist/img/avatar5.png" class="img-circle" alt="User Image">
                         </div>
                         <div class="info">
                             <h4>Welcome</h4>
@@ -347,8 +347,8 @@
                                 </span>
                             </a>
                             <ul class="treeview-menu">
-                                <li><a href="http://healthadmin.thememinister.com/forms_basic.html">Add Doctor</a></li>
-                                <li><a href="http://healthadmin.thememinister.com/table.html">Doctor list</a></li>
+                                <li><a href="forms_basic.html">Add Doctor</a></li>
+                                <li><a href="table.html">Doctor list</a></li>
                                 
                             </ul>
                         </li>
@@ -360,8 +360,8 @@
                                 </span>
                             </a>
                             <ul class="treeview-menu">
-                                <li><a href="http://healthadmin.thememinister.com/add-patient.html">Add patient</a></li>
-                                <li><a href="http://healthadmin.thememinister.com/pt-list.html">patient list</a></li>
+                                <li><a href="add-patient.html">Add patient</a></li>
+                                <li><a href="pt-list.html">patient list</a></li>
                             </ul>
                         </li>
                         <li class="treeview">
@@ -372,8 +372,8 @@
                                 </span>
                             </a>
                             <ul class="treeview-menu">
-                                <li><a href="http://healthadmin.thememinister.com/add-department.html">Add Department</a></li>
-                                <li><a href="http://healthadmin.thememinister.com/dep-list.html">Department list</a></li>
+                                <li><a href="add-department.html">Add Department</a></li>
+                                <li><a href="dep-list.html">Department list</a></li>
                             </ul>
                         </li>
                         <li class="treeview">
@@ -384,8 +384,8 @@
                                 </span>
                             </a>
                             <ul class="treeview-menu">
-                                <li><a href="http://healthadmin.thememinister.com/add-schedule.html">Add schedule</a></li>
-                                <li><a href="http://healthadmin.thememinister.com/sch-list.html">schedule list</a></li>
+                                <li><a href="add-schedule.html">Add schedule</a></li>
+                                <li><a href="sch-list.html">schedule list</a></li>
                                 
                             </ul>
                         </li>
@@ -397,8 +397,8 @@
                                 </span>
                             </a>
                             <ul class="treeview-menu">
-                                <li><a href="http://healthadmin.thememinister.com/add-app.html">Add appoinemnt</a></li>
-                                <li><a href="http://healthadmin.thememinister.com/app-list.html">Appionment list</a></li>
+                                <li><a href="add-app.html">Add appoinemnt</a></li>
+                                <li><a href="app-list.html">Appionment list</a></li>
                             </ul>
                         </li>
                         <li class="treeview">
@@ -409,8 +409,8 @@
                                 </span>
                             </a>
                             <ul class="treeview-menu">
-                                <li><a href="http://healthadmin.thememinister.com/add-payment.html">Add payment</a></li>
-                                <li><a href="http://healthadmin.thememinister.com/pay-list.html">payment list</a></li>
+                                <li><a href="add-payment.html">Add payment</a></li>
+                                <li><a href="pay-list.html">payment list</a></li>
                             </ul>
                         </li>
                         <li class="treeview">
@@ -421,27 +421,27 @@
                             </span>
                         </a>
                         <ul class="treeview-menu">
-                            <li><a href="http://healthadmin.thememinister.com/patient-wise-report.html">Patient wise Report</a></li>
-                            <li><a href="http://healthadmin.thememinister.com/doctor-wise-report.html">Doctor wise Report</a></li>
-                            <li><a href="http://healthadmin.thememinister.com/total-report.html">Total Report</a></li>
+                            <li><a href="patient-wise-report.html">Patient wise Report</a></li>
+                            <li><a href="doctor-wise-report.html">Doctor wise Report</a></li>
+                            <li><a href="total-report.html">Total Report</a></li>
                         </ul>
                     </li>
                     <li class="treeview">
-                        <a href="http://healthadmin.thememinister.com/widgets.html">
+                        <a href="widgets.html">
                             <i class="fa fa-user-circle-o"></i><span>Human Resources</span>
                             <span class="pull-right-container">
                             <i class="fa fa-angle-left pull-right"></i>
                             </span>
                         </a>
                         <ul class="treeview-menu">
-                            <li><a href="http://healthadmin.thememinister.com/add-emp.html">Add Employee</a></li>
-                            <li><a href="http://healthadmin.thememinister.com/emp-list.html">employee list</a></li>
-                            <li><a href="http://healthadmin.thememinister.com/add-ns.html">Add Nurse</a></li>
-                            <li><a href="http://healthadmin.thememinister.com/ns-list.html">Nurse list</a></li>
-                            <li><a href="http://healthadmin.thememinister.com/add-ph.html">Add pharmacist</a></li>
-                            <li><a href="http://healthadmin.thememinister.com/ph-list.html">pharmacist list</a></li>
-                            <li><a href="http://healthadmin.thememinister.com/add-rep.html">Add Representative</a></li>
-                            <li><a href="http://healthadmin.thememinister.com/rep-list.html">Representative list</a></li>
+                            <li><a href="add-emp.html">Add Employee</a></li>
+                            <li><a href="emp-list.html">employee list</a></li>
+                            <li><a href="add-ns.html">Add Nurse</a></li>
+                            <li><a href="ns-list.html">Nurse list</a></li>
+                            <li><a href="add-ph.html">Add pharmacist</a></li>
+                            <li><a href="ph-list.html">pharmacist list</a></li>
+                            <li><a href="add-rep.html">Add Representative</a></li>
+                            <li><a href="rep-list.html">Representative list</a></li>
                             
                         </ul>
                     </li>
@@ -453,8 +453,8 @@
                             </span>
                         </a>
                         <ul class="treeview-menu">
-                            <li><a href="http://healthadmin.thememinister.com/add-bed.html">Add Bed</a></li>
-                            <li><a href="http://healthadmin.thememinister.com/bed-list.html">Bed list</a></li>
+                            <li><a href="add-bed.html">Add Bed</a></li>
+                            <li><a href="bed-list.html">Bed list</a></li>
                         </ul>
                     </li>
                     <li class="treeview">
@@ -465,18 +465,18 @@
                             </span>
                         </a>
                         <ul class="treeview-menu">
-                            <li><a href="http://healthadmin.thememinister.com/add-notice.html">Add Notice</a></li>
-                            <li><a href="http://healthadmin.thememinister.com/not-list.html">Notice list</a></li>
+                            <li><a href="add-notice.html">Add Notice</a></li>
+                            <li><a href="not-list.html">Notice list</a></li>
                         </ul>
                     </li>
                     
                     <li>
-                        <a href="http://healthadmin.thememinister.com/mailbox.html">
+                        <a href="mailbox.html">
                          <i class="fa fa-envelope"></i><span> Mail</span>
                      </a>
                  </li>
                  <li>
-                    <a href="http://healthadmin.thememinister.com/widgets.html">
+                    <a href="widgets.html">
                         <i class="fa fa-shopping-bag"></i><span> Widgets</span> 
                     </a>
                 </li>
@@ -488,14 +488,14 @@
                         </span>
                     </a>
                     <ul class="treeview-menu">
-                        <li><a href="http://healthadmin.thememinister.com/register.html">Sign up</a></li>
-                        <li><a href="http://healthadmin.thememinister.com/login.html">Sign in</a></li>
-                        <li><a href="http://healthadmin.thememinister.com/forget_password.html">Forget password</a></li>
-                        <li><a href="http://healthadmin.thememinister.com/lockscreen.html">Lockscreen</a></li>
-                        <li><a href="http://healthadmin.thememinister.com/404.html">404 Error</a></li>
-                        <li><a href="http://healthadmin.thememinister.com/505.html">505 Error</a></li>
-                        <li><a href="http://healthadmin.thememinister.com/blank.html">Blank Page</a></li>
-                        <li><a href="http://healthadmin.thememinister.com/profile.html">Profile page</a></li>
+                        <li><a href="register.html">Sign up</a></li>
+                        <li><a href="login.html">Sign in</a></li>
+                        <li><a href="forget_password.html">Forget password</a></li>
+                        <li><a href="lockscreen.html">Lockscreen</a></li>
+                        <li><a href="404.html">404 Error</a></li>
+                        <li><a href="505.html">505 Error</a></li>
+                        <li><a href="blank.html">Blank Page</a></li>
+                        <li><a href="profile.html">Profile page</a></li>
                     </ul>
                 </li>
                 <li class="treeview">
@@ -506,25 +506,25 @@
                         </span>
                     </a>
                     <ul class="treeview-menu">
-                        <li><a href="http://healthadmin.thememinister.com/calender.html">Calender</a></li>
-                        <li><a href="http://healthadmin.thememinister.com/buttons.html">Buttons</a></li>
-                        <li><a href="http://healthadmin.thememinister.com/panels.html">Panels</a></li>
-                        <li><a href="http://healthadmin.thememinister.com/typography.html">Typography</a></li>
-                        <li><a href="http://healthadmin.thememinister.com/tabs.html">Tabs & accordian</a></li>
-                        <li><a href="http://healthadmin.thememinister.com/icons_fontawesome.html">Icons</a></li>
-                        <li><a href="http://healthadmin.thememinister.com/notification.html">Notifications</a></li>
-                        <li><a href="http://healthadmin.thememinister.com/profile.html">Modals</a></li>
-                        <li><a href="http://healthadmin.thememinister.com/gridSystem.html">grid</a></li>
-                        <li><a href="http://healthadmin.thememinister.com/slider.html">slider</a></li>
-                        <li><a href="http://healthadmin.thememinister.com/timeline.html">Timeline</a></li>
-                        <li><a href="http://healthadmin.thememinister.com/invoice.html">Invoice</a></li>
-                        <li><a href="http://healthadmin.thememinister.com/labels-badges-alerts.html">Badges</a></li>
-                        <li><a href="http://healthadmin.thememinister.com/progressbars.html">progress bar</a></li>
+                        <li><a href="calender.html">Calender</a></li>
+                        <li><a href="buttons.html">Buttons</a></li>
+                        <li><a href="panels.html">Panels</a></li>
+                        <li><a href="typography.html">Typography</a></li>
+                        <li><a href="tabs.html">Tabs & accordian</a></li>
+                        <li><a href="icons_fontawesome.html">Icons</a></li>
+                        <li><a href="notification.html">Notifications</a></li>
+                        <li><a href="profile.html">Modals</a></li>
+                        <li><a href="gridSystem.html">grid</a></li>
+                        <li><a href="slider.html">slider</a></li>
+                        <li><a href="timeline.html">Timeline</a></li>
+                        <li><a href="invoice.html">Invoice</a></li>
+                        <li><a href="labels-badges-alerts.html">Badges</a></li>
+                        <li><a href="progressbars.html">progress bar</a></li>
                         
                     </ul>
                 </li>
                 <li>
-                    <a href="http://healthadmin.thememinister.com/modals.html">
+                    <a href="modals.html">
                         <i class="fa fa-window-maximize"></i><span> Modals</span> 
                     </a>
                 </li>
@@ -535,9 +535,9 @@
                         <span class="pull-right-container"><i class="fa fa-angle-left pull-right"></i></span>
                     </a>
                     <ul class="treeview-menu">
-                        <li><a href="http://healthadmin.thememinister.com/layout_fixed.html">Fixed layout</a></li>
-                        <li><a href="http://healthadmin.thememinister.com/layout_boxed.html">Boxed layout</a></li>
-                        <li><a href="http://healthadmin.thememinister.com/layout_collapsed_sidebar.html">collapsed layout</a></li>
+                        <li><a href="layout_fixed.html">Fixed layout</a></li>
+                        <li><a href="layout_boxed.html">Boxed layout</a></li>
+                        <li><a href="layout_collapsed_sidebar.html">collapsed layout</a></li>
                     </ul>
                 </li>                
             </ul>
@@ -820,52 +820,52 @@
          <!-- Start Core Plugins
         =====================================================================-->
         <!-- jQuery -->
-        <script src="assets/plugins/jQuery/jquery-1.12.4.min.js" type="text/javascript"></script>
+        <script src="assets/admin_page/plugins/jQuery/jquery-1.12.4.min.js" type="text/javascript"></script>
         <!-- jquery-ui --> 
-        <script src="assets/plugins/jquery-ui-1.12.1/jquery-ui.min.js" type="text/javascript"></script>
+        <script src="assets/admin_page/plugins/jquery-ui-1.12.1/jquery-ui.min.js" type="text/javascript"></script>
         <!-- Bootstrap -->
-        <script src="assets/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+        <script src="assets/admin_page/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
         <!-- lobipanel -->
-        <script src="assets/plugins/lobipanel/lobipanel.min.js" type="text/javascript"></script>
+        <script src="assets/admin_page/plugins/lobipanel/lobipanel.min.js" type="text/javascript"></script>
         <!-- Pace js -->
-        <script src="assets/plugins/pace/pace.min.js" type="text/javascript"></script>
+        <script src="assets/admin_page/plugins/pace/pace.min.js" type="text/javascript"></script>
         <!-- SlimScroll -->
-        <script src="assets/plugins/slimScroll/jquery.slimscroll.min.js" type="text/javascript"></script>
+        <script src="assets/admin_page/plugins/slimScroll/jquery.slimscroll.min.js" type="text/javascript"></script>
         <!-- FastClick -->
-        <script src="assets/plugins/fastclick/fastclick.min.js" type="text/javascript"></script>
+        <script src="assets/admin_page/plugins/fastclick/fastclick.min.js" type="text/javascript"></script>
         <!-- Hadmin frame -->
-        <script src="assets/dist/js/custom1.js" type="text/javascript"></script>
+        <script src="assets/admin_page/dist/js/custom1.js" type="text/javascript"></script>
         <!-- End Core Plugins
         =====================================================================-->
         <!-- Start Page Lavel Plugins
         =====================================================================-->
         <!-- Toastr js -->
-        <script src="assets/plugins/toastr/toastr.min.js" type="text/javascript"></script>
+        <script src="assets/admin_page/plugins/toastr/toastr.min.js" type="text/javascript"></script>
         <!-- Sparkline js -->
-        <script src="assets/plugins/sparkline/sparkline.min.js" type="text/javascript"></script>
+        <script src="assets/admin_page/plugins/sparkline/sparkline.min.js" type="text/javascript"></script>
         <!-- Data maps js -->
-        <script src="assets/plugins/datamaps/d3.min.js" type="text/javascript"></script>
-        <script src="assets/plugins/datamaps/topojson.min.js" type="text/javascript"></script>
-        <script src="assets/plugins/datamaps/datamaps.all.min.js" type="text/javascript"></script>
+        <script src="assets/admin_page/plugins/datamaps/d3.min.js" type="text/javascript"></script>
+        <script src="assets/admin_page/plugins/datamaps/topojson.min.js" type="text/javascript"></script>
+        <script src="assets/admin_page/plugins/datamaps/datamaps.all.min.js" type="text/javascript"></script>
         <!-- Counter js -->
-        <script src="assets/plugins/counterup/waypoints.js" type="text/javascript"></script>
-        <script src="assets/plugins/counterup/jquery.counterup.min.js" type="text/javascript"></script>
+        <script src="assets/admin_page/plugins/counterup/waypoints.js" type="text/javascript"></script>
+        <script src="assets/admin_page/plugins/counterup/jquery.counterup.min.js" type="text/javascript"></script>
         <!-- ChartJs JavaScript -->
-        <script src="assets/plugins/chartJs/Chart.min.js" type="text/javascript"></script>
-        <script src="assets/plugins/emojionearea/emojionearea.min.js" type="text/javascript"></script>
+        <script src="assets/admin_page/plugins/chartJs/Chart.min.js" type="text/javascript"></script>
+        <script src="assets/admin_page/plugins/emojionearea/emojionearea.min.js" type="text/javascript"></script>
         <!-- Monthly js -->
-        <script src="assets/plugins/monthly/monthly.js" type="text/javascript"></script>
+        <script src="assets/admin_page/plugins/monthly/monthly.js" type="text/javascript"></script>
         <!-- Data maps -->
-        <script src="assets/plugins/datamaps/d3.min.js" type="text/javascript"></script>
-        <script src="assets/plugins/datamaps/topojson.min.js" type="text/javascript"></script>
-        <script src="assets/plugins/datamaps/datamaps.all.min.js" type="text/javascript"></script>
+        <script src="assets/admin_page/plugins/datamaps/d3.min.js" type="text/javascript"></script>
+        <script src="assets/admin_page/plugins/datamaps/topojson.min.js" type="text/javascript"></script>
+        <script src="assets/admin_page/plugins/datamaps/datamaps.all.min.js" type="text/javascript"></script>
       
         <!-- End Page Lavel Plugins
         =====================================================================-->
         <!-- Start Theme label Script
         =====================================================================-->
         <!-- Dashboard js -->
-        <script src="assets/dist/js/custom.js" type="text/javascript"></script>
+        <script src="assets/admin_page/dist/js/custom.js" type="text/javascript"></script>
 
         <!-- End Theme label Script
         =====================================================================-->
