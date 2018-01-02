@@ -70,35 +70,38 @@ $result = $conn->query($doctorsList);
 if ($result->num_rows > 0) {
     
     while ($row = $result->fetch_assoc()) {
-        echo '<tr name="doc[' . $row['id'] . ']" value="' . $row['id'] . '">' . '<td>' . $row['firstName'] . '</td>' . '<td>' . $row['lastName'] . '</td>' . '<td>' . $row['placeName'] . '</td>' . '<td>' . $row['email'] . '</td>' . '<td>' . $row['phoneNo'] . '</td>' . '<td>' . $row['fee'] . '</td>' . '<td>' . $row['timingFrom'] . ' - ' . $row['timingTo'] . '</td>' . '<td>' . $row['city'] . '</td>';
+        echo '<tr name="doc' . $row['id'] . '" value="' . $row['id'] . '">' . '<td>' . $row['firstName'] . '</td>' . '<td>' . $row['lastName'] . '</td>' . '<td>' . $row['placeName'] . '</td>' . '<td>' . $row['email'] . '</td>' . '<td>' . $row['phoneNo'] . '</td>' . '<td>' . $row['fee'] . '</td>' . '<td>' . $row['timingFrom'] . ' - ' . $row['timingTo'] . '</td>' . '<td>' . $row['city'] . '</td>'.
+   
+							'<td>
+										<button type="button" class="btn btn-success md-trigger m-b-5 m-r-2"
+											data-modal="modal-9">Schedule Appointment</button>
+									</td>
+									</tr>';
     }
 } else {
-    ;
+    echo "0 results";
 }
-echo "0 results"?>
-							<td>
-										<button class="btn btn-success md-trigger m-b-5 m-r-2"
-											data-modal="modal-9">3D Flip (vertical)</button>
-									</td>
-									</tr>
+?>
 								</tbody>
 							</table>
-								<!-- Modal 3D flip (vertical) effects -->
-                                                <div class="md-modal md-effect-9" id="modal-9">
-                                                    <div class="md-content">
-                                                        <h3>Modal Dialog</h3>
-                                                        <div class="n-modal-body">
-                                                            <p>This is a modal window. You can do the following things with it:</p>
-                                                            <ul>
-                                                                <li><strong>Read:</strong> modal windows will probably tell you something important so don't forget to read what they say.</li>
-                                                                <li><strong>Look:</strong> a modal window enjoys a certain kind of attention; just look at it and appreciate its presence.</li>
-                                                                <li><strong>Close:</strong> click on the button below to close the modal.</li>
-                                                            </ul>
-                                                            <button class="btn btn-success md-close">Close me!</button>
-                                                        </div>
-                                                    </div>
-                                                </div>
-								
+							<!-- Modal 3D flip (vertical) effects -->
+							<div class="md-modal md-effect-9" id="modal-9">
+								<div class="md-content">
+									<h3>Schedule Appointment</h3>
+									<div class="n-modal-body">
+										<p>Schedule an appointment with your doctor - </p>
+										<input name="title" class="col-md-12" type="text" placeholder="Add Title" />
+										<input name="description" class="col-md-12" type="text" placeholder="Add Description" style="height: 400px"/>
+										 <?php
+										while ($row = $result->fetch_assoc()) {
+                                            echo '<a href="scheduleAppointment.php?doctorId='.$row['id'].'" type="submit" class="btn btn-success md-close">Submit</a>';
+										}?>
+									</div>
+								</div>
+							</div>
+
+							<div class="md-overlay"></div>
+
 						</form>
 					</div>
 				</div>

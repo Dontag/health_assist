@@ -1,7 +1,7 @@
 <?php 
 
-$doctorId = $_POST['']; 
-
-$scheduleAppointment = "INSERT INTO `appointments` (`status`,``,``,``,``) VALUES(0, )";
-$result = $conn->query($doctorsList);
+$doctorId = $_GET['doctorId']; 
+echo $doctorId;
+/* $scheduleAppointment = "INSERT INTO `appointments` (`status`,`title`,`description`,`doctorId`) VALUES(0, )";
+$result = $conn->query($doctorsList); */
 ?>
