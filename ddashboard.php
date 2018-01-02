@@ -10,7 +10,7 @@
                                     <div class="items pull-left">
                                         <i class="fa fa-users fa-2x"></i>
                                         <br><br>
-                                        <h4>Today</h4>
+                                        <h4>Today's</h4>
                                     </div>
                                 </div>
                             </div>
@@ -23,9 +23,9 @@
                                         </h2>
                                     </div>
                                     <div class="items pull-left">
-                                        <i class="fa fa-users fa-2x"></i>
+                                        <i class="fa fa-history fa-2x"></i>
                                         <br><br>
-                                        <h4>Past</h4>
+                                        <h4>History</h4>
                                     </div>
                                 </div>
                             </div>
