@@ -5,72 +5,54 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Thememinister Health Admin panel</title>
+    
 
-    <!-- Favicon and touch icons -->
+    <title>HEALTH ASSIST PANEL</title>
+
+
+    
     <link rel="shortcut icon" href="assets/admin_page/dist/img/ico/favicon.png" type="image/x-icon">
-   <!-- Start Global Mandatory Style
-   =====================================================================-->
-   <!-- jquery-ui css -->
    <link href="assets/admin_page/plugins/jquery-ui-1.12.1/jquery-ui.min.css" rel="stylesheet" type="text/css"/>
-   <!-- Bootstrap -->
+   
    <link href="assets/admin_page/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
-   <!-- Bootstrap rtl -->
-   <!--<link href="assets/admin_page/bootstrap-rtl/bootstrap-rtl.min.css" rel="stylesheet" type="text/css"/>-->
-   <!-- Lobipanel css -->
+   
    <link href="assets/admin_page/plugins/lobipanel/lobipanel.min.css" rel="stylesheet" type="text/css"/>
-   <!-- Pace css -->
-   <link href="assets/admin_page/plugins/pace/flash.css" rel="stylesheet" type="text/css"/>
-   <!-- Font Awesome -->
+      <link href="assets/admin_page/plugins/pace/flash.css" rel="stylesheet" type="text/css"/>
+   
    <link href="assets/admin_page/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
-   <!-- Pe-icon -->
-   <link href="assets/admin_page/pe-icon-7-stroke/css/pe-icon-7-stroke.css" rel="stylesheet" type="text/css"/>
-   <!-- Themify icons -->
+     <link href="assets/admin_page/pe-icon-7-stroke/css/pe-icon-7-stroke.css" rel="stylesheet" type="text/css"/>
+   
    <link href="assets/admin_page/themify-icons/themify-icons.css" rel="stylesheet" type="text/css"/>
-        <!-- End Global Mandatory Style
-        =====================================================================-->
-        <!-- Start page Label Plugins 
-        =====================================================================-->
-        <!-- Toastr css -->
         <link href="assets/admin_page/plugins/toastr/toastr.css" rel="stylesheet" type="text/css"/>
-        <!-- Emojionearea -->
+   
         <link href="assets/admin_page/plugins/emojionearea/emojionearea.min.css" rel="stylesheet" type="text/css"/>
-        <!-- Monthly css -->
+    
         <link href="assets/admin_page/plugins/monthly/monthly.css" rel="stylesheet" type="text/css"/>
-        <!-- End page Label Plugins 
-        =====================================================================-->
-        <!-- Start Theme Layout Style
-        =====================================================================-->
-        <!-- Theme style -->
         <link href="assets/admin_page/dist/css/stylehealth.min.css" rel="stylesheet" type="text/css"/>
-        <!--<link href="assets/admin_page/admin_page/dist/css/stylehealth-rtl.css" rel="stylesheet" type="text/css"/>-->
-        <!-- End Theme Layout Style
-        =====================================================================-->
+    
     </head>
     <body class="hold-transition sidebar-mini">
-        <!-- Site wrapper -->
+       
         <div class="wrapper">
             <header class="main-header">
-                <a href="index.html" class="logo"> <!-- Logo -->
+                <a href="index.html" class="logo"> 
                     <span class="logo-mini">
-                        <!--<b>A</b>H-admin-->
+                     
                         <img src="assets/admin_page/dist/img/mini-logo.png" alt="">
                     </span>
                     <span class="logo-lg">
-                        <!--<b>Admin</b>H-admin-->
+                       
                         <img src="assets/admin_page/dist/img/logo.png" alt="">
                     </span>
                 </a>
-                <!-- Header Navbar -->
+                
                 <nav class="navbar navbar-static-top ">
-                    <a href="index.html#" class="sidebar-toggle" data-toggle="offcanvas" role="button"> <!-- Sidebar toggle button-->
-                        <span class="sr-only">Toggle navigation</span>
+                    <a href="index.html#" class="sidebar-toggle" data-toggle="offcanvas" role="button">                         <span class="sr-only">Toggle navigation</span>
                         <span class="fa fa-tasks"></span>
                     </a>
                     <div class="navbar-custom-menu">
                         <ul class="nav navbar-nav">
-                            <!-- user -->
+        
                             <li class="dropdown dropdown-user admin-user">
                                 <a href="index.html#" class="dropdown-toggle" data-toggle="dropdown"> 
                                 <div class="user-image">
@@ -87,12 +69,11 @@
                     </div>
                 </nav>
             </header>
-            <!-- =============================================== -->
-            <!-- Left side column. contains the sidebar -->
+            
           <aside class="main-sidebar">
-                <!-- sidebar -->
+              
                 <div class="sidebar">
-                    <!-- Sidebar user panel -->
+                
                     <div class="user-panel">
                         <div class="image pull-left">
                             <img src="assets/admin_page/dist/img/avatar5.png" class="img-circle" alt="User Image">
@@ -103,7 +84,7 @@
                         </div>
                     </div>
                    
-                    <!-- sidebar menu -->
+                   
                     <ul class="sidebar-menu">
                         <li class="active">
                             <a href="pdashboard.php"><i class="fa fa-hospital-o"></i><span>Dashboard</span>
@@ -119,11 +100,10 @@
                 
                              
             </ul>
-        </div> <!-- /.sidebar -->
+        </div> 
     </aside>
-            <!-- =============================================== -->
-            <!-- Content Wrapper. Contains page content -->
+            
             <div class="content-wrapper">
-                <!-- Content Header (Page header) -->
+            
                 <section class="content-header">
                     

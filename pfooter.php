@@ -1,7 +1,7 @@
  </div> <!-- /.content-wrapper -->
                 <footer class="main-footer">
                     <div class="pull-right hidden-xs"> <b>Version</b> 1.0</div>
-                    <strong>Copyright &copy; 2016-2017 <a href="index.html#">Thememinister</a>.</strong> All rights reserved.
+                    <strong>Copyright &copy;2018 <a href="index.html#">Health Assist</a>.</strong> All rights reserved.
                 </footer>
         	</div> <!-- ./wrapper -->
         <!-- ./wrapper -->
