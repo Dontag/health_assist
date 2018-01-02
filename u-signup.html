@@ -5,22 +5,11 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Health Assist</title>
-
-    <!-- Favicon and touch icons -->
+    <title>Health Assist</title>  
     <link rel="shortcut icon" href="assets/admin_page/dist/img/ico/favicon.png" type="image/x-icon">
-    
-    <!-- Bootstrap -->
     <link href="assets/admin_page/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
-    <!-- Bootstrap rtl -->
-    <!--<link href="assets/admin_page/bootstrap-rtl/bootstrap-rtl.min.css" rel="stylesheet" type="text/css"/>-->
-    <!-- Pe-icon-7-stroke -->
     <link href="assets/admin_page/pe-icon-7-stroke/css/pe-icon-7-stroke.css" rel="stylesheet" type="text/css"/>
-    <!-- style css -->
     <link href="assets/admin_page/dist/css/stylehealth.min.css" rel="stylesheet" type="text/css"/>
-    <!-- Theme style rtl -->
-    <!--<link href="assets/admin_page/dist/css/stylehealth-rtl.css" rel="stylesheet" type="text/css"/>-->
 </head>
 <body>
     <!-- Content Wrapper -->
@@ -43,11 +32,28 @@
                 </div>
                 <div class="panel-body">
                     <form action="index.html" id="loginForm" novalidate>
+                            <label>id:</label>
+                            <br><br>
                         <div class="row">
+                            <div class="form-group col-lg-6">
+                                <label>Firstname</label>
+                                <input type="text" value="" id="firstName" class="form-control" name="firstName">
+                                
+                            </div>
+                            <div class="form-group col-lg-6">
+                                <label>Lastname</label>
+                                <input type="text" value="" id="lastName" class="form-control" name="lastName">
+                                
+                            </div>
+                             <div class="form-group col-lg-6">
+                                <label>Phone No:</label>
+                                <input type="number" value="" id="phone" class="form-control" name="phone">
+                                
+                            </div>
                             <div class="form-group col-lg-6">
                                 <label>Username</label>
                                 <input type="text" value="" id="username" class="form-control" name="username">
-                                <span class="help-block small">Your unique username to app</span>
+                                <span class="help-block small">Your unique username</span>
                             </div>
                             <div class="form-group col-lg-6">
                                 <label>Password</label>
@@ -55,13 +61,8 @@
                                 <span class="help-block small">Your hard to guess password</span>
                             </div>
                             <div class="form-group col-lg-6">
-                                <label>Repeat Password</label>
-                                <input type="password" value="" id="repeatpassword" class="form-control" name="repeatpassword">
-                                <span class="help-block small">Please repeat your pasword</span>
-                            </div>
-                            <div class="form-group col-lg-6">
                                 <label>Email Address</label>
-                                <input type="text" value="" id="email" class="form-control" name="email">
+                                <input type="text" value="" id="emailid" class="form-control" name="emailid">
                                 <span class="help-block small">Your address email to contact</span>
                             </div>
                         </div>
@@ -74,10 +75,7 @@
             </div>
         </div>
     </div>
-    <!-- /.content-wrapper -->
-    <!-- jQuery -->
     <script src="assets/admin_page/plugins/jQuery/jquery-1.12.4.min.js" type="text/javascript"></script>
-    <!-- bootstrap js -->
     <script src="assets/admin_page/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
 </body>
 </html>
