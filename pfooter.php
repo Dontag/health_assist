@@ -8,7 +8,7 @@
          <!-- Start Core Plugins
         =====================================================================-->
         <!-- jQuery -->
-        <script src="assets/admin_page/plugins/jQuery/jquery-1.12.4.min.js" type="text/javascript"></script>
+        <script src="assets/admin_page/plugins/jQuery/jquery-3.2.1.min.js" type="text/javascript"></script>
         <!-- jquery-ui --> 
         <script src="assets/admin_page/plugins/jquery-ui-1.12.1/jquery-ui.min.js" type="text/javascript"></script>
         <!-- Bootstrap -->

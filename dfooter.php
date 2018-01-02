@@ -1,14 +1,14 @@
  </div> <!-- /.content-wrapper -->
                 <footer class="main-footer">
                     <div class="pull-right hidden-xs"> <b>Version</b> 1.0</div>
-                    <strong>Copyright &copy; 2016-2017 <a href="index.html#">Thememinister</a>.</strong> All rights reserved.
+                    <strong>Copyright &copy;2018 <a href="index.html#">Health Assist</a>.</strong> All rights reserved.
                 </footer>
         	</div> <!-- ./wrapper -->
         <!-- ./wrapper -->
          <!-- Start Core Plugins
         =====================================================================-->
         <!-- jQuery -->
-        <script src="assets/admin_page/plugins/jQuery/jquery-1.12.4.min.js" type="text/javascript"></script>
+        <script src="assets/admin_page/plugins/jQuery/jquery-3.2.1.min.js" type="text/javascript"></script>
         <!-- jquery-ui --> 
         <script src="assets/admin_page/plugins/jquery-ui-1.12.1/jquery-ui.min.js" type="text/javascript"></script>
         <!-- Bootstrap -->
