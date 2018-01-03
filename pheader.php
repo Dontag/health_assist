@@ -34,7 +34,7 @@ if(!isset($_SESSION['username'])) {
         <link href="assets/admin_page/dist/css/stylehealth.min.css" rel="stylesheet" type="text/css"/>
     
     </head>
-    <body class="hold-transition sidebar-mini" ng-app='myapp'>
+    <body class="hold-transition sidebar-mini">
        
         <div class="wrapper">
             <header class="main-header">

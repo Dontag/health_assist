@@ -9,6 +9,9 @@
     $city = '';
     $fee = '';
     $phoneNo = '';
+    $title = '';
+    $description = '';
+    $date ='';
     
     $errors = array();
     
@@ -44,7 +47,14 @@
             $_SESSION['username'] = $username;
             $_SESSION['sucess'] = "You are logged in";
             $_SESSION['type'] = "P";
+            
+            $qGetId = "SELECT id, username FROM patient";
+            while($row = $result->fetch_assoc()) {
+                $id = $row['id'];
+            }
             header('location: dashboardPatient.php');
+            
+            
         }
     }
     
@@ -64,10 +74,14 @@
             
             $qValidate = "SELECT * from patient WHERE username = '$username' AND password = '$password'";
             $result = mysqli_query($conn, $qValidate);
+            while($row = $result->fetch_assoc()) {
+                $id = $row['id'];
+            }
             
             if(mysqli_num_rows($result) > 0) {
                 $_SESSION['username'] = $username;
                 $_SESSION['sucess'] = "You are logged in";
+                $_SESSION['id'] = $id;
                 $_SESSION['type'] = "P";
                 header('location: dashboardPatient.php');
                 echo isset($_SESSION['username']);
@@ -129,7 +143,12 @@
             
             $_SESSION['sucess'] = "You are logged in";
             $_SESSION['type'] = "P";
-            //header('location: dashboardDoctor.php');
+            
+            $qGetId = "SELECT id, username FROM doctor";
+            while($row = $result->fetch_assoc()) {
+                $id = $row['id'];
+            }
+            header('location: dashboardDoctor.php');
         } else {
         }
     }
@@ -148,14 +167,18 @@
         if(count($errors) == 0) {
             $password = md5($password);
             
-            $qValidate = "SELECT * from doctors WHERE username = '$username' AND password = '$password'";
+            $qValidate = "SELECT id,username,password from doctors WHERE username = '$username' AND password = '$password'";
             $result = mysqli_query($conn, $qValidate);
+            while($row = $result->fetch_assoc()) {
+                $id = $row['id'];
+            }
             echo mysqli_num_rows($result);
             echo isset($_SESSION['username']);
             if(mysqli_num_rows($result) == 1) {
                 $_SESSION['username'] = $username;
                 $_SESSION['sucess'] = "You are logged in";
                 $_SESSION['type'] = "D";
+                $_SESSION['id'] = $id;
                 header('location: dashboardDoctor.php');
                 echo isset($_SESSION['username']);
                 
@@ -165,8 +188,40 @@
         }
     }
     
+    if(isset($_POST['scheduleAnAppointment'])) {
+        
+        if(isset($_GET['doctorId'])) {
+            $doctorId = $_GET['doctorId'];
+        }
+        
+        if(isset($_SESSION['username'])) {
+            $patientId = $_SESSION['username']; 
+        }
+        
+        
+        $title = mysqli_real_escape_string($conn,$_POST["title"]);
+        $description = mysqli_real_escape_string($conn,$_POST["description"]);
+        //$date = date('Y-mm--dd');
+        
+        if(empty($doctorId)) {
+            array_push($errors, "Fatal Error");
+        }
+        if(empty($patientId)) {
+            if(isset($patientId)) {
+                array_push($errors, "Fatal Error");
+            } else {
+                array_push($errors, "User Not Logged In");
+            }
+        }
+        
+        $qRegisterDoctor = "INSERT INTO appointment (doctorId, patientId, title, description)
+                                VALUES ('$doctorId','$patientId','$title','$description')";
+        mysqli_query($conn, $qRegisterDoctor);
+        header('location : dashboardPatient.php');
+    }
+    
     if(isset($_GET['logout'])) {
-        unset($_SESSION['username']);
+        unset($_SESSION['username'],$_SESSION['id'],$_SESSION['type']);
     }
     
     
