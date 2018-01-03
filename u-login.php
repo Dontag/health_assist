@@ -58,7 +58,7 @@ session_start();
                         </div>
                         <div>
                             <button class="btn btn-primary">Login</button>
-                            <a class="btn btn-warning" href="register.html">Register</a>
+                            <a class="btn btn-warning" href="u-signup.php">Register</a>
                         </div>
                     </form>
                 </div>
