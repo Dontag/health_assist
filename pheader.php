@@ -1,4 +1,9 @@
 <?php include 'Actions.php';?>
+<?php 
+if(isset($_SESSION['username'])) {
+    header('location: index.php');
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -45,7 +50,8 @@
                 </a>
                 
                 <nav class="navbar navbar-static-top ">
-                    <a href="index.html#" class="sidebar-toggle" data-toggle="offcanvas" role="button">                         <span class="sr-only">Toggle navigation</span>
+                    <a href="index.html#" class="sidebar-toggle" data-toggle="offcanvas" role="button">                         
+                    <span class="sr-only">Toggle navigation</span>
                         <span class="fa fa-tasks"></span>
                     </a>
                     <div class="navbar-custom-menu">
@@ -78,7 +84,9 @@
                         </div>
                         <div class="info">
                             <h4>Welcome</h4>
+                            <?php if(isset($_SESSION['username'])) :?>
                             <p><?php echo $_SESSION['username']?></p>
+                            <?php endif?>
                         </div>
                     </div>
                    

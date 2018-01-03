@@ -74,7 +74,7 @@
                            
                         </div>
                         <div align="center">
-                            <input class="btn btn-primary" type="submit" name="registerButton" value="Register">
+                            <input class="btn btn-primary" type="submit" name="registerPatientButton" value="Register">
                             <br><br>
                             <p>Already a member?</p>
                         	<a href="loginPatient.php" class="btn btn-primary">LOGIN</a>

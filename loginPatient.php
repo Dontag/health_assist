@@ -1,6 +1,4 @@
-<?php
-session_start();
-?>
+<?php include 'Actions.php';?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -53,7 +51,7 @@ session_start();
 						<div class="form-group">
 							<label class="control-label" for="username">Username</label> <input
 								type="text" placeholder="username"
-								title="Please enter you username" value=""
+								title="Please enter you username" value="<?php echo $username;?>"
 								name="username" id="username" class="form-control">
 
 						</div>
@@ -65,7 +63,7 @@ session_start();
 								class="help-block small">Your strong password</span>
 						</div>
 						<div>
-							<input class="btn btn-primary" type="submit" name="loginButton" value="Login"/>
+							<input class="btn btn-primary" type="submit" name="loginPatientButton" value="Login"/>
 							<a class="btn btn-warning" href="registerPatient.php">Register</a>
 						</div>
 					</form>
