@@ -1,5 +1,6 @@
+<?php include 'config.php';?>
 <?php 
-Login();
+session_start();
 ?>
 <!DOCTYPE html>
 <html lang="en">

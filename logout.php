@@ -1,8 +1,5 @@
-
-<?php include 'pdashboard.php';?>
-
 <?php
-
+Login();
 if(session_destroy())
 {
 }
