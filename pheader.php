@@ -9,8 +9,6 @@
 
     <title>HEALTH ASSIST PANEL</title>
 
-
-    
     <link rel="shortcut icon" href="assets/admin_page/dist/img/ico/favicon.png" type="image/x-icon">
    <link href="assets/admin_page/plugins/jquery-ui-1.12.1/jquery-ui.min.css" rel="stylesheet" type="text/css"/>
    
@@ -62,7 +60,7 @@
                                 <ul class="dropdown-menu">
                                     <li><a href="profile.html"><i class="fa fa-users"></i> User Profile</a></li>
                                     <li><a href="index.html#"><i class="fa fa-gear"></i> Settings</a></li>
-                                    <li><a href="login.html"><i class="fa fa-sign-out"></i> Logout</a></li>
+                                    <li><a href="logout.php"><i class="fa fa-sign-out"></i> Logout</a></li>
                                 </ul>
                             </li>
                         </ul>
@@ -80,7 +78,7 @@
                         </div>
                         <div class="info">
                             <h4>Welcome</h4>
-                            <p>Mr. Alrazy</p>
+                            <p>Mr. User</p>
                         </div>
                     </div>
                    
@@ -91,7 +89,7 @@
                             </a>
                         </li>
                         <li >
-                            <a href="pappointments.php"><i class="fa fa-hospital-o"></i><span>Dashboard</span>
+                            <a href="pappointments.php"><i class="fa fa-hospital-o"></i><span>Appointments</span>
                             </a>
                         </li>
                     

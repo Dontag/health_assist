@@ -1,4 +1,6 @@
-
+<?php 
+Login();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -43,7 +45,7 @@
                     </div>
                 </div>
                 <div class="panel-body">
-                    <form action="index.html" id="loginForm" novalidate>
+                    <form action="patientsignin.php" id="loginForm" method="post">
                         <div class="form-group">
                             <label class="control-label" for="username">Username</label>
                             <input type="text" placeholder="example@gmail.com" title="Please enter you username" required="" value="" name="username" id="username" class="form-control">
