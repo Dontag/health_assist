@@ -100,7 +100,7 @@ font-weight: 900;
 .navbar-default .navbar-nav > .active > a, 
 .navbar-default .navbar-nav > .active > a:hover, 
 .navbar-default .navbar-nav > .active > a:focus {
-	color: rgb(148, 230, 230) !important;
+	color: rgb(71, 133, 133) !important;
 	background-color: transparent;
 	font-weight: 700;
 }
@@ -261,7 +261,7 @@ img.img-circle.team-img {
 	-webkit-border-radius: 0;
 	-moz-border-radius: 20px;
 	border-radius: 0;
-	background: #FFFFFF;
+	background: #ffffff;
 	transition: all 0.5s;
 }
 
