@@ -31,7 +31,7 @@
 	<!-- Content Wrapper -->
 	<div class="login-wrapper">
 		<div class="back-link">
-			<a href="index.html" class="btn btn-success">Back to Home</a>
+			<a href="index.php" class="btn btn-success">Back to Home</a>
 		</div>
 		<div class="container-center">
 			<div class="panel panel-bd">

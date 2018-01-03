@@ -70,7 +70,6 @@ CREATE TABLE `doctor` (
 --
 
 INSERT INTO `doctor` (`id`, `firstName`, `lastName`, `placeName`, `city`, `fee`, `phoneNo`, `email`, `username`, `password`) VALUES
-(1, 'Neel', 'Khalade', 'Ramnagar Society', 'Bhosari', '100', 456564654, 'doctor@doctor.com', 'doctor', 'doctor'),
 (2, 'sfsdf', 'sdfsd', 'dfsd', 'sdfsdf', '54', 0, 'dsfsd', 'ssdfsd', 'sfdsd');
 
 -- --------------------------------------------------------
@@ -94,10 +93,6 @@ CREATE TABLE `patient` (
 --
 
 INSERT INTO `patient` (`id`, `username`, `password`, `email`, `firstName`, `lastName`, `phoneNo`) VALUES
-(1, 'user', 'user', 'user@user.com', 'user', 'user', 84654565),
-(2, 'sfsdfsdf', 'sadasdasasd', '1@ga.com', 'sads', 'asddas', 5465465),
-(3, 'sfsdfsdf', 'dsddss', '1@ga.com', 'sads', 'asddas', 5465465),
-(7, 'asda', '0cc175b9c0f1b6a831c399e269772661', 'asdas', 'asds', 'asddas', 53586),
 (10, 'neel', '7220d65820839700b6c9ae74f87b48e0', 'nk@gmail.com', 'neel', 'nk', 12345);
 
 --
