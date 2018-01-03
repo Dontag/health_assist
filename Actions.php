@@ -121,7 +121,7 @@
             
             $password = md5($password);
             $qRegisterDoctor = "INSERT INTO doctors (firstName, lastName, placeName, city, fee, phoneNo, email, username, password)
-                                VALUES ('$firstName','$lastName','$placeName','$city','$fee','$phoneNo', $email, $username, $password)";
+                                VALUES ('$firstName','$lastName','$placeName','$city','$fee','$phoneNo', '$email', '$username', '$password')";
             mysqli_query($conn, $qRegisterDoctor);
             
             
