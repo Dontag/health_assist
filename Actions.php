@@ -42,12 +42,12 @@
             $_SESSION['type'] = "D";
             header('location: dashboardPatient.php');
         }
-        
-        if(isset($_GET['logout'])) {
-            session_destroy();
-            unset($_SESSION['username']);
-            unset($_SESSION['type']);
-            header('location: registerPatient.php');
-        }
+    }
+    
+    if(isset($_GET['logout'])) {
+        session_destroy();
+        unset($_SESSION['username']);
+        unset($_SESSION['type']);
+        header('location: index.html');
     }
 ?>

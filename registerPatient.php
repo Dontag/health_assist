@@ -1,4 +1,4 @@
-<?php include 'PatientActions.php';?>
+<?php include 'Actions.php';?>
 
 <!DOCTYPE html>
 <html lang="en">
