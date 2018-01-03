@@ -35,28 +35,31 @@
 						<table class="table table-bordered table-hover">
 							<thead>
 								<tr>
-									<th>First Name</th>
-									<th>Last Time</th>
 									<th>Title</th>
-									<th>Date</th>
 									<th>Description</th>
+									<th>FirstName</th>
+									<th>LastName</th>
+									<th>PlaceName</th>
+									<th>PhoneNo</th>
 								</tr>
 							</thead>
 							<tbody>
-								<tr>
+								
 <?php
-$queryAppointmentList = "SELECT doctor.id, doctor.firstName, doctor.lastName, appointment.title, appointment.date, appointment.description, appointment.doctorId FROM doctor INNER JOIN appointment ON doctor.id = appointment.patientId";
+$queryAppointmentList = 'SELECT appointment.title, appointment.description, appointment.doctorId, doctors.firstName, doctors.lastName, doctors.placeName, doctors.phoneNo from patient inner join doctors inner join appointment on '.$_SESSION["id"].' = appointment.patientId and doctors.id = appointment.doctorId';
 $getAppointmentList = $conn->query($queryAppointmentList);
 
 if ($getAppointmentList->num_rows > 0) {
     while ($row = $getAppointmentList->fetch_assoc()) {
-        echo '<td>' . $row['firstName'] . '</td>' . '<td>' . $row['lastName'] . '</td>' . '<td>' . $row['title'] . '</td>' . '<td>' . $row['date'] . '</td>' . '<td>' . $row['description'] . '</td>';
+        echo '<tr><td>' . $row['title'] . '</td> <td>' . $row['description'] . '</td>
+        <td>' . $row['firstName'] . '</td>' . '<td>' . $row['lastName'] . '</td>' . 
+        '<td>' . $row['placeName'] . '</td>' . '<td>' . $row['phoneNo'] . '</td></tr>';
     }
 } else {
     echo "0 results";
 }
 ?>
-								</tr>
+								
 							</tbody>
 						</table>
 					</div>

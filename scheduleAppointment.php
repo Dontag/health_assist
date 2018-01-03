@@ -1,5 +1,10 @@
 <?php include 'pheader.php';?>
 <?php
+if (empty($_GET['doctorId'])) {
+    $doctorId = '';
+} else {
+    $doctorId = $_GET['doctorId'];
+}
 /*
  * $scheduleAppointment = "INSERT INTO `appointments` (`status`,`title`,`description`,`doctorId`) VALUES(0, )";
  * $result = $conn->query($doctorsList);
@@ -30,11 +35,12 @@
 				 <div class="row">
                         	<?php include 'errors.php'?>
                         </div><br><br>
-				<form action="scheduleAppointment.php" method="post">
-					<input name="patientId" value="<?php $_SESSION['id'];?>"/>
-					<input name="title" placeholder="Title" value="<?php $title;?>">
-					<input name="description" placeholder="Describe" value="<?php $description;?>">
-					<input class="btn btn-primary" type="submit" name="scheduleAnAppointment"/>
+				<form action="dashboardPatient.php" method="post">
+					<input name="doctorId" value="<?php echo $doctorId;?>"/>
+					<input name="patientId" value="<?php echo  $_SESSION['id'];?>"/>
+					<input name="title" placeholder="Title" value="<?php echo $title;?>">
+					<input name="description" placeholder="Describe" value="<?php echo $description;?>">
+					<input class="btn btn-primary" value="Schedule Appointment" type="submit" name="scheduleAnAppointment"/>
 				</form>
 					
 				</div>

@@ -1,9 +1,6 @@
 <?php include 'dheader.php';?>
 <?php
 
-
-
-
 ?>
 <form action="index.html#" method="get"
 	class="sidebar-form search-box pull-right hidden-md hidden-lg hidden-sm">
@@ -38,29 +35,35 @@
 						<table class="table table-bordered table-hover">
 							<thead>
 								<tr>
-									<th>First Name</th>
-									<th>Last Time</th>
+									<th>FirstName Patient</th>
+									<th>LastName Patient</th>
 									<th>Title</th>
-									<th>Date</th>
 									<th>Description</th>
+									<th>Phone No</th>
+									<th>Email</th>
 								</tr>
 							</thead>
 							<tbody>
-							<tr>
+							
 <?php
-$queryAppointmentList = "SELECT patient.id, patient.firstName, patient.lastName, appointment.title, appointment.date, appointment.description, appointment.patientId FROM patient INNER JOIN appointment ON patient.id = appointment.patientId";
+$queryAppointmentList = 'select patient.firstName, patient.lastName, patient.phoneNo, patient.email, appointment.title, appointment.description from patient inner join appointment inner join doctors on '.$_SESSION['id'].' = appointment.doctorId and patient.id = appointment.patientId' ;
 $getAppointmentList = $conn->query($queryAppointmentList);
 
 if ($getAppointmentList->num_rows > 0) {
     while ($row = $getAppointmentList->fetch_assoc()) {
-        echo  '<td>' . $row['firstName'] . '</td>'. '<td>' . $row['lastName'] . '</td>' . '<td>' . $row['title'] . '</td>'. '<td>' . $row['date'] . '</td>'. '<td>' . $row['description'] . '</td>';
+        echo  '<tr>'.
+                '<td>' . $row['firstName'] . '</td> <td>' . $row['lastName']. '</td>' .
+            '<td>' . $row['title'] . '</td>'.
+            '<td>' . $row['description'] .'</td> <td>' . $row['phoneNo'] . '</td>'.  
+                '</td> <td>' . $row['email'] . '</td> 
+                </tr>';
     }
     
 } else {
     echo "0 results";
 }
 ?>
-								</tr>
+								
 							</tbody>
 						</table>
 					</div>

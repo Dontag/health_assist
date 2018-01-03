@@ -49,9 +49,11 @@
             $_SESSION['type'] = "P";
             
             $qGetId = "SELECT id, username FROM patient";
+            $result =$conn->query($qGetId);
             while($row = $result->fetch_assoc()) {
-                $id = $row['id'];
+                $_SESSION['id'] = $row['id'];
             }
+            
             header('location: dashboardPatient.php');
             
             
@@ -144,9 +146,10 @@
             $_SESSION['sucess'] = "You are logged in";
             $_SESSION['type'] = "P";
             
-            $qGetId = "SELECT id, username FROM doctor";
+            $qGetId = "SELECT id, username FROM doctors";
+            $result =$conn->query($qGetId);
             while($row = $result->fetch_assoc()) {
-                $id = $row['id'];
+                $_SESSION['id'] = $row['id'];
             }
             header('location: dashboardDoctor.php');
         } else {
@@ -190,18 +193,14 @@
     
     if(isset($_POST['scheduleAnAppointment'])) {
         
-        if(isset($_GET['doctorId'])) {
-            $doctorId = $_GET['doctorId'];
-        }
         
-        if(isset($_SESSION['username'])) {
-            $patientId = $_SESSION['username']; 
-        }
-        
-        
-        $title = mysqli_real_escape_string($conn,$_POST["title"]);
+        $title =mysqli_real_escape_string($conn,$_POST["title"]);
         $description = mysqli_real_escape_string($conn,$_POST["description"]);
-        //$date = date('Y-mm--dd');
+        $doctorId = mysqli_real_escape_string($conn, $_POST["doctorId"]);
+        
+        if(isset($_SESSION['id'])) {
+            $patientId = $_SESSION['id']; 
+        }
         
         if(empty($doctorId)) {
             array_push($errors, "Fatal Error");
@@ -214,10 +213,10 @@
             }
         }
         
-        $qRegisterDoctor = "INSERT INTO appointment (doctorId, patientId, title, description)
+        $qSchedule = "INSERT INTO appointment (doctorId, patientId, title, description)
                                 VALUES ('$doctorId','$patientId','$title','$description')";
-        mysqli_query($conn, $qRegisterDoctor);
-        header('location : dashboardPatient.php');
+        mysqli_query($conn, $qSchedule);
+        header('location: AppointmentsPatient.php');
     }
     
     if(isset($_GET['logout'])) {
