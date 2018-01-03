@@ -253,7 +253,7 @@
                                     <h4>Login</h4>
                                     <small>Login as Patient</small>
                                     <div class="clearfix"></div>
-                                    <i class="fa fa-user-plus" style="font-size:30px;color:rgb(31, 199, 143);" ></i>
+                                    <i class="fa fa-sign-in" style="font-size:30px;color:rgb(31, 199, 143);" ></i>
                                 </div>
                                 <img src="assets/landing_page/img/login.png" class="img-responsive" alt="...">
                             </a>
@@ -268,7 +268,7 @@
                                     <h4>Login</h4>
                                     <small>Login as Doctor</small>
                                     <div class="clearfix"></div>
-                                    <i class="fa fa-user-plus" style="font-size:30px;color:rgb(31, 199, 143);" ></i>
+                                    <i class="fa fa-sign-in" style="font-size:30px;color:rgb(31, 199, 143);" ></i>
                                 </div>
                                 <img src="assets/landing_page/img/signup1.png" class="img-responsive" alt="...">
                             </a>
