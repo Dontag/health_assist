@@ -1,4 +1,4 @@
-<?php include 'config.php';?>
+<?php include 'PatientActions.php';?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -60,7 +60,7 @@
                                 <ul class="dropdown-menu">
                                     <li><a href="profile.html"><i class="fa fa-users"></i> User Profile</a></li>
                                     <li><a href="index.html#"><i class="fa fa-gear"></i> Settings</a></li>
-                                    <li><a href="logout.php"><i class="fa fa-sign-out"></i> Logout</a></li>
+                                    <li><a href="index.php?logout='1'"><i class="fa fa-sign-out"></i> Logout</a></li>
                                 </ul>
                             </li>
                         </ul>
@@ -78,7 +78,7 @@
                         </div>
                         <div class="info">
                             <h4>Welcome</h4>
-                            <p>Mr. User</p>
+                            <p><?php echo $_SESSION['username']?></p>
                         </div>
                     </div>
                    

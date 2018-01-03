@@ -1,4 +1,5 @@
 <?php include 'pheader.php';?>
+
 <?php
 $doctorsList = "SELECT id, firstName, lastName, placeName, email, phoneNo, fee, city, timingFrom, timingTo FROM doctor";
 $result = $conn->query($doctorsList);

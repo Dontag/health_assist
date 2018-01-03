@@ -1,4 +1,4 @@
-<?php include 'LoginAndSignUpActions/registerPatientAction.php';?>
+<?php include 'PatientActions.php';?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -33,41 +33,43 @@
                 </div>
                 <div class="panel-body">
                     <form action="registerPatient.php" id="signupForm" method="post">
-                            <br><br>
+                        <div class="row">
+                        	<?php include 'LoginAndSignUpActions/errors.php'?>
+                        </div><br><br>
                         <div class="row">
                          	<div class="form-group col-lg-6">
                                 <label>Username</label>
-                                <input type="text" value="" id="username" class="form-control" name="username">
+                                <input type="text" id="username" class="form-control" name="username" value="<?php echo $username;?>">
                                 <span class="help-block small">Your unique username</span>
                             </div>
                             <div class="form-group col-lg-6">
                                 <label>Password</label>
-                                <input type="password" value="" id="password" class="form-control" name="password">
+                                <input type="password" id="password" class="form-control" name="password">
                                 <span class="help-block small">Your hard to guess password</span>
                             </div>
                             <div class="form-group col-lg-6">
                                 <label>Again type Password</label>
-                                <input type="password" value="" id="password2" class="form-control" name="password2">
+                                <input type="password" id="password2" class="form-control" name="password2">
                                 <span class="help-block small">Retype password</span>
                             </div> 
                             <div class="form-group col-lg-6">
                                 <label>Email Address</label>
-                                <input type="text" value="" id="emailid" class="form-control" name="email">
+                                <input type="text" id="emailid" class="form-control" name="email" value="<?php echo $email;?>">
                                 <span class="help-block small">Your address email to contact</span>
                             </div>
                             <div class="form-group col-lg-6">
                                 <label>Firstname</label>
-                                <input type="text" value="" id="firstName" class="form-control" name="firstName">
+                                <input type="text" id="firstName" class="form-control" name="firstName" value="<?php echo $firstName;?>">
                                 
                             </div>
                             <div class="form-group col-lg-6">
                                 <label>Lastname</label>
-                                <input type="text" value="" id="lastName" class="form-control" name="lastName">
+                                <input type="text" id="lastName" class="form-control" name="lastName" value="<?php echo $lastName;?>">
                                 
                             </div>
                              <div class="form-group col-lg-6">
                                 <label>Phone No:</label>
-                                <input type="number" value="" id="phone" class="form-control" name="phoneNo">
+                                <input type="number" id="phone" class="form-control" name="phoneNo" value="<?php echo $phoneNo;?>">
                             </div>
                            
                         </div>

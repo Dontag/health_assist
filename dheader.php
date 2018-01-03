@@ -1,4 +1,4 @@
-<?php include 'config.php';?>
+<?php include 'LoginAndSignUpActions/DoctorActions.php';?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -88,7 +88,7 @@
 					</div>
 					<div class="info">
 						<h4>Welcome</h4>
-						<p>Mr. Alrazy</p>
+						<p><?php echo $_SESSION['username']?></p>
 					</div>
 				</div>
 
