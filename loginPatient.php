@@ -48,6 +48,9 @@
 				</div>
 				<div class="panel-body">
 					<form action="loginPatient.php" id="loginForm" method="post">
+					<div class="row">
+                        	<?php include 'errors.php'?>
+                        </div><br><br>
 						<div class="form-group">
 							<label class="control-label" for="username">Username</label> <input
 								type="text" placeholder="username"
@@ -65,6 +68,12 @@
 						<div>
 							<input class="btn btn-primary" type="submit" name="loginPatientButton" value="Login"/>
 							<a class="btn btn-warning" href="registerPatient.php">Register</a>
+						</div>
+						
+						<div class="row">
+						<?php if(isset($_SESSION['username'])) :?>
+							<h2></h2>
+						<?php endif?>
 						</div>
 					</form>
 				</div>

@@ -61,12 +61,15 @@
             
             $qValidate = "SELECT * from patient WHERE username = '$username' AND password = '$password'";
             $result = mysqli_query($conn, $qValidate);
-            
+            echo mysqli_num_rows($result);
+            echo isset($_SESSION['username']);
             if(mysqli_num_rows($result) == 1) {
                 $_SESSION['username'] = $username;
                 $_SESSION['sucess'] = "You are logged in";
                 $_SESSION['type'] = "P";
                 header('location: dashboardPatient.php');
+                echo isset($_SESSION['username']);
+                
             } else {
                 array_push($errors, "The username/password is wrong!");
             }
@@ -76,6 +79,6 @@
     if(isset($_GET['logout'])) {
         session_destroy();
         unset($_SESSION['username'], $_SESSION['type']);;
-        header('location: index.html');
+        header('location: index.php');
     }
 ?>

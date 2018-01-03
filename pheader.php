@@ -1,7 +1,7 @@
 <?php include 'Actions.php';?>
-<?php 
-if(isset($_SESSION['username'])) {
-    header('location: index.php');
+ <?php 
+if(!isset($_SESSION['username'])) {
+     header('location: index.php');
 }
 ?>
 <!DOCTYPE html>

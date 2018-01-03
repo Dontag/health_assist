@@ -34,7 +34,7 @@
                 <div class="panel-body">
                     <form action="registerPatient.php" id="signupForm" method="post">
                         <div class="row">
-                        	<?php include 'LoginAndSignUpActions/errors.php'?>
+                        	<?php include 'errors.php'?>
                         </div><br><br>
                         <div class="row">
                          	<div class="form-group col-lg-6">
