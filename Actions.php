@@ -64,9 +64,8 @@
             
             $qValidate = "SELECT * from patient WHERE username = '$username' AND password = '$password'";
             $result = mysqli_query($conn, $qValidate);
-            echo mysqli_num_rows($result);
-            echo isset($_SESSION['username']);
-            if(mysqli_num_rows($result) == 1) {
+            
+            if(mysqli_num_rows($result) > 0) {
                 $_SESSION['username'] = $username;
                 $_SESSION['sucess'] = "You are logged in";
                 $_SESSION['type'] = "P";
@@ -121,7 +120,7 @@
             echo $password2;
             
             $password = md5($password);
-            $qRegisterDoctor = "INSERT INTO doctor (firstName, lastName, placeName, city, fee, phoneNo, email, username, password)
+            $qRegisterDoctor = "INSERT INTO doctors (firstName, lastName, placeName, city, fee, phoneNo, email, username, password)
                                 VALUES ('$firstName','$lastName','$placeName','$city','$fee','$phoneNo', $email, $username, $password)";
             mysqli_query($conn, $qRegisterDoctor);
             
