@@ -1,7 +1,5 @@
-<?php include 'config.php';?>
-<?php 
-session_start();
-?>
+<?php include 'LoginAndSignUpActions/registerPatientAction.php';?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -34,10 +32,29 @@ session_start();
                     </div>
                 </div>
                 <div class="panel-body">
-                    <form action="signuppatient.php" id="loginForm" method="post">
-                            <label>id:</label>
+                    <form action="registerPatient.php" id="signupForm" method="post">
                             <br><br>
                         <div class="row">
+                         	<div class="form-group col-lg-6">
+                                <label>Username</label>
+                                <input type="text" value="" id="username" class="form-control" name="username">
+                                <span class="help-block small">Your unique username</span>
+                            </div>
+                            <div class="form-group col-lg-6">
+                                <label>Password</label>
+                                <input type="password" value="" id="password" class="form-control" name="password">
+                                <span class="help-block small">Your hard to guess password</span>
+                            </div>
+                            <div class="form-group col-lg-6">
+                                <label>Again type Password</label>
+                                <input type="password" value="" id="password2" class="form-control" name="password2">
+                                <span class="help-block small">Retype password</span>
+                            </div> 
+                            <div class="form-group col-lg-6">
+                                <label>Email Address</label>
+                                <input type="text" value="" id="emailid" class="form-control" name="email">
+                                <span class="help-block small">Your address email to contact</span>
+                            </div>
                             <div class="form-group col-lg-6">
                                 <label>Firstname</label>
                                 <input type="text" value="" id="firstName" class="form-control" name="firstName">
@@ -50,28 +67,15 @@ session_start();
                             </div>
                              <div class="form-group col-lg-6">
                                 <label>Phone No:</label>
-                                <input type="number" value="" id="phone" class="form-control" name="phone">
-                                
+                                <input type="number" value="" id="phone" class="form-control" name="phoneNo">
                             </div>
-                            <div class="form-group col-lg-6">
-                                <label>Username</label>
-                                <input type="text" value="" id="username" class="form-control" name="username">
-                                <span class="help-block small">Your unique username</span>
-                            </div>
-                            <div class="form-group col-lg-6">
-                                <label>Password</label>
-                                <input type="password" value="" id="password" class="form-control" name="password">
-                                <span class="help-block small">Your hard to guess password</span>
-                            </div>
-                            <div class="form-group col-lg-6">
-                                <label>Email Address</label>
-                                <input type="text" value="" id="emailid" class="form-control" name="emailId">
-                                <span class="help-block small">Your address email to contact</span>
-                            </div>
+                           
                         </div>
-                        <div>
-                            <button class="btn btn-primary">Register</button>
-                            
+                        <div align="center">
+                            <input class="btn btn-primary" type="submit" name="registerButton" value="Register">
+                            <br><br>
+                            <p>Already a member?</p>
+                        	<a href="loginPatient.php" class="btn btn-primary">LOGIN</a>
                         </div>
                     </form>
                 </div>
