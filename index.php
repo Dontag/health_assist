@@ -129,7 +129,7 @@
                     <div class="col-sm-6 col-md-5 col-lg-6">
                         <div class="portfolio-item">
                             <div class="hover-bg">
-                                <a href="u-signup.php">
+                                <a href="registerPatient.php">
                                     <div class="hover-text">
                                         <h4>Sign Up</h4>
                                         <small>Sign up as Patient</small>
@@ -144,7 +144,7 @@
                     <div class="col-sm-6 col-md-5 col-lg-6">
                             <div class="portfolio-item">
                                 <div class="hover-bg">
-                                    <a href="d-signup.html">
+                                    <a href="registerDoctor.php">
                                         <div class="hover-text">
                                             <h4>Sign Up</h4>
                                             <small>Sign up as Doctor</small>
@@ -248,7 +248,7 @@
                 <div class="col-sm-6 col-md-5 col-lg-6">
                     <div class="portfolio-item">
                         <div class="hover-bg">
-                            <a href="u-login.php">
+                            <a href="loginPatient.php">
                                 <div class="hover-text">
                                     <h4>Login</h4>
                                     <small>Login as Patient</small>
@@ -263,7 +263,7 @@
                 <div class="col-sm-6 col-md-5 col-lg-6">
                     <div class="portfolio-item">
                         <div class="hover-bg">
-                            <a href="d-login.html">
+                            <a href="loginDoctor.php">
                                 <div class="hover-text">
                                     <h4>Login</h4>
                                     <small>Login as Doctor</small>

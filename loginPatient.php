@@ -71,9 +71,12 @@
 						</div>
 						
 						<div class="row">
-						<?php if(isset($_SESSION['username'])) :?>
-							<h2></h2>
-						<?php endif?>
+							<div class="col-md-12">
+    						<?php if(isset($_SESSION['username'])) :?>
+    							<h2>Already logged in ! </h2>
+    							<a class="btn btn-primary" href="dashboardPatient.php">LOGIN NOW</a>
+    						<?php endif?>
+						</div>
 						</div>
 					</form>
 				</div>

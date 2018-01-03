@@ -1,4 +1,4 @@
-
+<?php include 'Actions.php';?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -27,7 +27,7 @@
     <!-- Content Wrapper -->
     <div class="login-wrapper">
         <div class="back-link">
-            <a href="index.html" class="btn btn-success">Back to Home</a>
+            <a href="index.php" class="btn btn-success">Back to Home</a>
         </div>
         <div class="container-center">
             <div class="panel panel-bd">
@@ -43,10 +43,10 @@
                     </div>
                 </div>
                 <div class="panel-body">
-                    <form action="index.html" id="loginForm" novalidate>
+                    <form action="loginDoctor.php" id="loginForm" method="post">
                         <div class="form-group">
                             <label class="control-label" for="username">Username</label>
-                            <input type="text" placeholder="example@gmail.com" title="Please enter you username" required="" value="" name="username" id="username" class="form-control">
+                            <input type="text" placeholder="example@gmail.com" title="Please enter you username" required="" value="<?php echo $username;?>" name="username" id="username" class="form-control">
                             
                         </div>
                         <div class="form-group">
@@ -55,9 +55,16 @@
                             <span class="help-block small">Your strong password</span>
                         </div>
                         <div>
-                            <button class="btn btn-primary">Login</button>
-                            <a class="btn btn-warning" href="register.html">Register</a>
+                            <input class="btn btn-primary" type="submit" name="loginDoctorButton" value="Login"/>
+                            <a class="btn btn-warning" href="registerDoctor.php">Register</a>
                         </div>
+                        <div class="row">
+							<div class="col-md-12">
+    						<?php if(isset($_SESSION['username'])) :?>
+    							<h2>Already logged in ! </h2>
+    							<a class="btn btn-primary" href="dashboardPatient.php">LOGIN NOW</a>
+    						<?php endif?>
+						</div>
                     </form>
                 </div>
             </div>

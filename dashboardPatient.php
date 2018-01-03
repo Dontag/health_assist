@@ -55,21 +55,39 @@ $result = $conn->query($doctorsList);
 									</tr>
 								</thead>
 								<tbody>
+								<tr ng-repeat="user in users">
+                                  <td>{{user.firstName}}</td>
+                                  <td>{{user.lastName}}</td>
+                                  <td>{{user.placeName}}</td>
+                                  <td>{{user.email}}</td>
+                                  <td>{{user.phoneNo}}</td>
+                                  <td>{{user.fee}}</td>
+                                  <td>{{user.city}}</td>
+                                </tr>
 <?php
 
-if ($result->num_rows > 0) {
-    
-    while ($row = $result->fetch_assoc()) {
-        echo '<tr>' . '<td>' . $row['firstName'] . '</td>' . '<td>' . $row['lastName'] . '</td>' . '<td>' . $row['placeName'] . '</td>' . '<td>' . $row['email'] . '</td>' . '<td>' . $row['phoneNo'] . '</td>' . '<td>' . $row['fee'] . '</td>' . '<td>' . $row['timingFrom'] . ' - ' . $row['timingTo'] . '</td>' . '<td>' . $row['city'] . '</td>'.
-   
-				'<td>
-					<a class="btn btn-xs btn-sucess" href="scheduleAppointment.php?doctorId='.$row['id'].'" </a>
-									</td>
-									</tr>';
-    }
-} else {
-    echo "0 results";
+$sel = mysqli_query($con,"select * from patient");
+$data = array();
+
+while ($row = mysqli_fetch_array($sel)) {
+    $data[] = array("firstName"=>$row['firstName'],"lastName"=>$row['lastName'],"placeName"=>$row['placeName'],
+        "email"=>$row['email'],"phoneNo"=>$row['phoneNo'],"fee"=>$row['fee'],"city"=>$row['city']);
+    echo json_encode($data);
 }
+// if ($result->num_rows > 0) {
+    
+//     while ($row = $result->fetch_assoc()) {
+//         echo '<tr>' . '<td>' . $row['firstName'] . '</td>' . '<td>' . $row['lastName'] . '</td>' . '<td>' . $row['placeName'] . '</td>' . '<td>' . $row['email'] . '</td>' . '<td>' 
+// 	    . $row['phoneNo'] . '</td>' . '<td>' . $row['fee'] . '</td>' . '<td>' . $row['timingFrom'] . ' - ' . $row['timingTo'] . '</td>' . '<td>' . $row['city'] . '</td>'.
+   
+// 				'<td>
+// 					<a class="btn btn-xs btn-sucess" href="scheduleAppointment.php?doctorId='.$row['id'].'" </a>
+// 									</td>
+// 									</tr>';
+//     }
+// } else {
+//     echo "0 results";
+// }
 ?>
 								</tbody>
 							</table>
@@ -85,6 +103,5 @@ if ($result->num_rows > 0) {
 
 
 	<!-- /.content -->
-
 
 	<?php include 'pfooter.php';?>

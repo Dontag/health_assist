@@ -1,4 +1,9 @@
-<?php include 'LoginAndSignUpActions/DoctorActions.php';?>
+<?php include 'Actions.php';?>
+<?php
+if (! isset($_SESSION['username'])) {
+    header('location: index.php');
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -45,21 +50,20 @@
 
 	<div class="wrapper">
 		<header class="main-header">
-			<a href="index.html" class="logo"> <span
-				class="logo-mini">  <img
+			<a href="index.php" class="logo"> <span class="logo-mini"> <img
 					src="assets/admin_page/dist/img/mini-logo.png" alt="">
-			</span> <span class="logo-lg">  <img
+			</span> <span class="logo-lg"> <img
 					src="assets/admin_page/dist/img/logo.png" alt="">
 			</span>
 			</a>
 			<nav class="navbar navbar-static-top ">
-				<a href="index.html#" class="sidebar-toggle" data-toggle="offcanvas"
-					role="button"> <span class="sr-only">Toggle
-						navigation</span> <span class="fa fa-tasks"></span>
+				<a href="index.php" class="sidebar-toggle" data-toggle="offcanvas"
+					role="button"> <span class="sr-only">Toggle navigation</span> <span
+					class="fa fa-tasks"></span>
 				</a>
 				<div class="navbar-custom-menu">
 					<ul class="nav navbar-nav">
-							<li class="dropdown dropdown-user admin-user"><a
+						<li class="dropdown dropdown-user admin-user"><a
 							href="index.html#" class="dropdown-toggle" data-toggle="dropdown">
 								<div class="user-image">
 									<img src="assets/admin_page/dist/img/avatar4.png"
@@ -69,18 +73,16 @@
 							<ul class="dropdown-menu">
 								<li><a href="profile.html"><i class="fa fa-users"></i> User
 										Profile</a></li>
-								<li><a href="index.html#"><i class="fa fa-gear"></i> Settings</a></li>
-								<li><a href="login.html"><i class="fa fa-sign-out"></i> Logout</a></li>
 							</ul></li>
 					</ul>
 				</div>
 			</nav>
 		</header>
-	
+
 		<aside class="main-sidebar">
-	
+
 			<div class="sidebar">
-				
+
 				<div class="user-panel">
 					<div class="image pull-left">
 						<img src="assets/admin_page/dist/img/avatar5.png"
@@ -88,21 +90,23 @@
 					</div>
 					<div class="info">
 						<h4>Welcome</h4>
-						<p><?php echo $_SESSION['username']?></p>
+						<?php if(isset($_SESSION['username'])) :?>
+                            <p><?php echo $_SESSION['username']?></p>
+                        <?php endif?>
 					</div>
 				</div>
 
-				
+
 				<ul class="sidebar-menu">
-					<li id="first-menu" class="active"><a href="ddashboard.php"><i
+					<li id="first-menu" class="active"><a href="dashboardDoctor.php"><i
 							class="fa fa-hospital-o"></i><span>Dashboard</span> </a></li>
 
-					<li id="second-menu"><a href="dappointments.php"><i
+					<li id="second-menu"><a href="appointmentsDoctor.php"><i
 							class="fa fa-hospital-o"></i><span>Appointments</span> </a></li>
 				</ul>
 			</div>
-			
+
 		</aside>
-			<div class="content-wrapper">
-			
+		<div class="content-wrapper">
+
 			<section class="content-header">

@@ -1,4 +1,4 @@
-
+<?php include 'Actions.php';?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -31,66 +31,64 @@
                     </div>
                 </div>
                 <div class="panel-body">
-                    <form action="index.html" id="loginForm" novalidate>
-                            <label>id:</label>
+                    <form action="registerDoctor.php" id="signupform" method="post">
+                    <div class="row">
+                        	<?php include 'errors.php'?>
+                        </div><br><br>
                             <br><br>
                         <div class="row">
                             <div class="form-group col-lg-6">
                                 <label>Firstname</label>
-                                <input type="text" value="" id="firstName" class="form-control" name="firstName">                           
+                                <input type="text" id="firstName" class="form-control" name="firstName" value="<?php echo $firstName;?>">                           
                             </div>
                            
                             <div class="form-group col-lg-6">
                                 <label>Lastname</label>
-                                <input type="text" value="" id="lastName" class="form-control" name="lastName">
+                                <input type="text" id="lastName" class="form-control" name="lastName" value="<?php echo $lastName;?>">
                             </div>
                              <div class="form-group col-lg-6">
                                 <label>Place</label>
-                                <input type="text" value="" id="placename" class="form-control" name="placeName">                           
+                                <input type="text" id="placename" class="form-control" name="placeName" value="<?php echo $placeName;?>">                           
                             </div>
                             <div class="form-group col-lg-6">
                                 <label>City</label>
-                                <input type="text" value="" id="city" class="form-control" name="city">                           
+                                <input type="text" id="city" class="form-control" name="city" value="<?php echo $city;?>">                           
                             </div>
                             <div class="form-group col-lg-6">
                                 <label>Fee:</label>
-                                <input type="int" value="" id="fee" class="form-control" name="fee">                           
-                            </div>
-                            <div class="form-group col-lg-6">
-                                <label>Timing From:</label>
-                                <input type="date" value="" id="timingfrom" class="form-control" name="timingfrom">                           
-                            </div>
-                            <div class="form-group col-lg-6">
-                                <label>Timing To:</label>
-                                <input type="date" value="" id="timingto" class="form-control" name="timingto">                           
-                            </div> 
+                                <input type="number" id="fee" class="form-control" name="fee" value="<?php echo $fee;?>">                           
+                            </div>  
                              <div class="form-group col-lg-6">
                                 <label>Phone No:</label>
-                                <input type="number" value="" id="phone" class="form-control" name="phone">                               
+                                <input type="number" id="phone" class="form-control" name="phoneNo" value="<?php echo $phoneNo;?>">                               
                             </div>
                             <div class="form-group col-lg-6">
-                                <label>Date Available</label>
-                                <input type="date" value="" id="dateavailable" class="form-control" name="dateAvailable">                           
-                            </div>   
+                                <label>Email Address</label>
+                                <input type="text" id="emailId" class="form-control" name="email" value="<?php echo $email;?>">
+                                <span class="help-block small">Your address email to contact</span>
+                            </div>
                             <div class="form-group col-lg-6">
                                 <label>Username</label>
-                                <input type="text" value="" id="username" class="form-control" name="username">
+                                <input type="text" id="username" class="form-control" name="username" value="<?php echo $username;?>">
                                 <span class="help-block small">Your unique username</span>
                             </div>
                             <div class="form-group col-lg-6">
                                 <label>Password</label>
-                                <input type="password" value="" id="password" class="form-control" name="password">
+                                <input type="password" id="password" class="form-control" name="password">
                                 <span class="help-block small">Your hard to guess password</span>
                             </div>
                             <div class="form-group col-lg-6">
-                                <label>Email Address</label>
-                                <input type="text" value="" id="emailid" class="form-control" name="emailid">
-                                <span class="help-block small">Your address email to contact</span>
+                                <label>Retype Password</label>
+                                <input type="password" id="password2" class="form-control" name="password2">
+                                <span class="help-block small">Again password please</span>
                             </div>
                         </div>
-                        <div>
-                            <button class="btn btn-primary">Register</button>
-                            
+                        
+                        <div align="center">
+                            <input class="btn btn-primary" type="submit" name="registerDoctorButton" value="Register">
+                            <br><br>
+                            <p>Already a member?</p>
+                        	<a href="loginDoctor.php" class="btn btn-primary">LOGIN</a>
                         </div>
                     </form>
                 </div>

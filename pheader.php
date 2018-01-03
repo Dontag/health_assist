@@ -1,5 +1,5 @@
 <?php include 'Actions.php';?>
- <?php 
+<?php 
 if(!isset($_SESSION['username'])) {
      header('location: index.php');
 }
@@ -34,11 +34,11 @@ if(!isset($_SESSION['username'])) {
         <link href="assets/admin_page/dist/css/stylehealth.min.css" rel="stylesheet" type="text/css"/>
     
     </head>
-    <body class="hold-transition sidebar-mini">
+    <body class="hold-transition sidebar-mini" ng-app='myapp'>
        
         <div class="wrapper">
             <header class="main-header">
-                <a href="index.html" class="logo"> 
+                <a href="index.php" class="logo"> 
                     <span class="logo-mini">
                      
                         <img src="assets/admin_page/dist/img/mini-logo.png" alt="">
@@ -64,8 +64,6 @@ if(!isset($_SESSION['username'])) {
                                 </div>
                                 </a>
                                 <ul class="dropdown-menu">
-                                    <li><a href="profile.html"><i class="fa fa-users"></i> User Profile</a></li>
-                                    <li><a href="index.html#"><i class="fa fa-gear"></i> Settings</a></li>
                                     <li><a href="index.php?logout='1'"><i class="fa fa-sign-out"></i> Logout</a></li>
                                 </ul>
                             </li>
@@ -93,11 +91,11 @@ if(!isset($_SESSION['username'])) {
                    
                     <ul class="sidebar-menu">
                         <li class="active">
-                            <a href="pdashboard.php"><i class="fa fa-hospital-o"></i><span>Dashboard</span>
+                            <a href="dashboardPatient.php"><i class="fa fa-hospital-o"></i><span>Dashboard</span>
                             </a>
                         </li>
                         <li >
-                            <a href="pappointments.php"><i class="fa fa-hospital-o"></i><span>Appointments</span>
+                            <a href="appointmentsPatient.php"><i class="fa fa-hospital-o"></i><span>Appointments</span>
                             </a>
                         </li>
                     
@@ -109,7 +107,7 @@ if(!isset($_SESSION['username'])) {
         </div> 
     </aside>
             
-            <div class="content-wrapper">
+            <div class="content-wrapper" ng-controller="myController">
             
                 <section class="content-header">
                     

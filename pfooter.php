@@ -47,6 +47,7 @@
         <script src="assets/admin_page/plugins/datamaps/d3.min.js" type="text/javascript"></script>
         <script src="assets/admin_page/plugins/datamaps/topojson.min.js" type="text/javascript"></script>
         <script src="assets/admin_page/plugins/datamaps/datamaps.all.min.js" type="text/javascript"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
       
         <!-- End Page Lavel Plugins
         =====================================================================-->
