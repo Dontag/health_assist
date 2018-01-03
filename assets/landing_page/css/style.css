@@ -100,7 +100,7 @@ font-weight: 900;
 .navbar-default .navbar-nav > .active > a, 
 .navbar-default .navbar-nav > .active > a:hover, 
 .navbar-default .navbar-nav > .active > a:focus {
-	color: rgb(113, 175, 116) !important;
+	color: rgb(137, 199, 141) !important;
 	border:1.6px rgb(137, 199, 141) solid ;
 	background-color: transparent;
 	font-weight: 700;
