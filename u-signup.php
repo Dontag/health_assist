@@ -1,4 +1,6 @@
-
+<?php 
+Login();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -31,7 +33,7 @@
                     </div>
                 </div>
                 <div class="panel-body">
-                    <form action="index.html" id="loginForm" novalidate>
+                    <form action="signuppatient.php" id="loginForm" method="post">
                             <label>id:</label>
                             <br><br>
                         <div class="row">
@@ -62,7 +64,7 @@
                             </div>
                             <div class="form-group col-lg-6">
                                 <label>Email Address</label>
-                                <input type="text" value="" id="emailid" class="form-control" name="emailid">
+                                <input type="text" value="" id="emailid" class="form-control" name="emailId">
                                 <span class="help-block small">Your address email to contact</span>
                             </div>
                         </div>
