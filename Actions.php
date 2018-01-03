@@ -129,7 +129,7 @@
             
             $_SESSION['sucess'] = "You are logged in";
             $_SESSION['type'] = "P";
-            header('location: dashboardDoctor.php');
+            //header('location: dashboardDoctor.php');
         } else {
         }
     }
