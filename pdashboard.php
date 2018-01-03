@@ -3,17 +3,7 @@
 $doctorsList = "SELECT id, firstName, lastName, placeName, email, phoneNo, fee, city, timingFrom, timingTo FROM doctor";
 $result = $conn->query($doctorsList);
 ?>
-<form action="index.html#" method="get"
-	class="sidebar-form search-box pull-right hidden-md hidden-lg hidden-sm">
-	<div class="input-group">
-		<input type="text" name="q" class="form-control"
-			placeholder="Search..."> <span class="input-group-btn">
-			<button type="submit" name="search" id="search-btn" class="btn">
-				<i class="fa fa-search"></i>
-			</button>
-		</span>
-	</div>
-</form>
+
 <div class="header-icon">
 	<i class="fa fa-tachometer"></i>
 </div>
@@ -49,7 +39,6 @@ $result = $conn->query($doctorsList);
 			<div class="panel panel-bd" data-index="0">
 				<div class="panel-body">
 					<div class="table-responsive">
-						<form method="post" action="scheduleAppointment.php">
 							<table class="table table-bordered table-hover">
 								<thead>
 									<tr>
@@ -70,11 +59,10 @@ $result = $conn->query($doctorsList);
 if ($result->num_rows > 0) {
     
     while ($row = $result->fetch_assoc()) {
-        echo '<tr name="doc' . $row['id'] . '" value="' . $row['id'] . '">' . '<td>' . $row['firstName'] . '</td>' . '<td>' . $row['lastName'] . '</td>' . '<td>' . $row['placeName'] . '</td>' . '<td>' . $row['email'] . '</td>' . '<td>' . $row['phoneNo'] . '</td>' . '<td>' . $row['fee'] . '</td>' . '<td>' . $row['timingFrom'] . ' - ' . $row['timingTo'] . '</td>' . '<td>' . $row['city'] . '</td>'.
+        echo '<tr>' . '<td>' . $row['firstName'] . '</td>' . '<td>' . $row['lastName'] . '</td>' . '<td>' . $row['placeName'] . '</td>' . '<td>' . $row['email'] . '</td>' . '<td>' . $row['phoneNo'] . '</td>' . '<td>' . $row['fee'] . '</td>' . '<td>' . $row['timingFrom'] . ' - ' . $row['timingTo'] . '</td>' . '<td>' . $row['city'] . '</td>'.
    
-							'<td>
-										<button type="button" class="btn btn-success md-trigger m-b-5 m-r-2"
-											data-modal="modal-9">Schedule Appointment</button>
+				'<td>
+					<a class="btn btn-xs btn-sucess" href="scheduleAppointment.php?doctorId='.$row['id'].'" </a>
 									</td>
 									</tr>';
     }
@@ -84,30 +72,15 @@ if ($result->num_rows > 0) {
 ?>
 								</tbody>
 							</table>
-							<!-- Modal 3D flip (vertical) effects -->
-							<div class="md-modal md-effect-9" id="modal-9">
-								<div class="md-content">
-									<h3>Schedule Appointment</h3>
-									<div class="n-modal-body">
-										<p>Schedule an appointment with your doctor - </p>
+							
 										<input name="title" class="col-md-12" type="text" placeholder="Add Title" />
-										<input name="description" class="col-md-12" type="text" placeholder="Add Description" style="height: 400px"/>
-										 <?php
-										while ($row = $result->fetch_assoc()) {
-                                            echo '<a href="scheduleAppointment.php?doctorId='.$row['id'].'" type="submit" class="btn btn-success md-close">Submit</a>';
-										}?>
-									</div>
-								</div>
-							</div>
-
-							<div class="md-overlay"></div>
-
-						</form>
+						<input name="description" class="col-md-12" type="text" placeholder="Add Description" style="height: 400px"/>
+						 
 					</div>
 				</div>
 			</div>
-		</div>
 	</div>
+</div>
 
 
 	<!-- /.content -->
