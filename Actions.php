@@ -1,10 +1,8 @@
 <?php include 'config.php';?>
 <?php 
     session_start();
-    $username = ''; 
+    $username = '';
     $email = '';
-    $password = '';
-    $password2 = '';
     $firstName = '';
     $lastName = '';
     $placeName = '';
@@ -85,16 +83,16 @@
     
     if(isset($_POST['registerDoctorButton'])) {
         
+        $username = mysqli_real_escape_string($conn,$_POST["username"]);
+        $password = mysqli_real_escape_string($conn,$_POST["password"]);
+        $password2 = mysqli_real_escape_string($conn,$_POST["password2"]);
+        $email = mysqli_real_escape_string($conn,$_POST["email"]);
         $firstName =mysqli_real_escape_string($conn,$_POST["firstName"]);
         $lastName = mysqli_real_escape_string($conn,$_POST["lastName"]);
         $placeName = mysqli_real_escape_string($conn,$_POST["placeName"]);
         $city = mysqli_real_escape_string($conn,$_POST["city"]);
         $fee = mysqli_real_escape_string($conn,$_POST["fee"]);
         $phoneNo = mysqli_real_escape_string($conn,$_POST["phoneNo"]);
-        $email = mysqli_real_escape_string($conn,$_POST["email"]);
-        $username = mysqli_real_escape_string($conn,$_POST["username"]);
-        $password = mysqli_real_escape_string($conn,$_POST["password"]);
-        $password2 = mysqli_real_escape_string($conn,$_POST["password2"]);
         
         if(empty($username)) {
             array_push($errors, "Username is required");
@@ -123,19 +121,16 @@
             echo $password2;
             
             $password = md5($password);
-            $qRegisterUser = "INSERT INTO doctor(firstName, lastName, placeName, city, fee, phoneNo, email, username, password)
+            $qRegisterDoctor = "INSERT INTO doctor (firstName, lastName, placeName, city, fee, phoneNo, email, username, password)
                                 VALUES ('$firstName','$lastName','$placeName','$city','$fee','$phoneNo', $email, $username, $password)";
-            mysqli_query($conn, $qRegisterUser);
+            mysqli_query($conn, $qRegisterDoctor);
             
-            if(isset($username)) {
-                echo "Already set";
-            } else {
-                
-                $_SESSION['username'] = $username;
-            }
+            
+            $_SESSION['username'] = $username;
+            
             $_SESSION['sucess'] = "You are logged in";
             $_SESSION['type'] = "P";
-            //header('location: dashboardDoctor.php');
+            header('location: dashboardDoctor.php');
         } else {
         }
     }
@@ -154,7 +149,7 @@
         if(count($errors) == 0) {
             $password = md5($password);
             
-            $qValidate = "SELECT * from doctor WHERE username = '$username' AND password = '$password'";
+            $qValidate = "SELECT * from doctors WHERE username = '$username' AND password = '$password'";
             $result = mysqli_query($conn, $qValidate);
             echo mysqli_num_rows($result);
             echo isset($_SESSION['username']);
@@ -172,8 +167,8 @@
     }
     
     if(isset($_GET['logout'])) {
-        session_destroy();
-        unset($_SESSION['username'], $_SESSION['type']);;
-        header('location: index.php');
+        unset($_SESSION['username']);
     }
+    
+    
 ?>

@@ -1,7 +1,7 @@
 <?php include 'pheader.php';?>
 
 <?php
-$doctorsList = "SELECT id, firstName, lastName, placeName, email, phoneNo, fee, city, timingFrom, timingTo FROM doctor";
+$doctorsList = "SELECT id, firstName, lastName, placeName, email, phoneNo, fee, city FROM doctor";
 $result = $conn->query($doctorsList);
 ?>
 
@@ -39,7 +39,7 @@ $result = $conn->query($doctorsList);
 		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 			<div class="panel panel-bd" data-index="0">
 				<div class="panel-body">
-					<div class="table-responsive">
+					<div class="table-responsive"  ng-controller="myController">
 							<table class="table table-bordered table-hover">
 								<thead>
 									<tr>
@@ -54,47 +54,23 @@ $result = $conn->query($doctorsList);
 										<th>Scheduler</th>
 									</tr>
 								</thead>
+								
 								<tbody>
-								<tr ng-repeat="user in users">
-                                  <td>{{user.firstName}}</td>
-                                  <td>{{user.lastName}}</td>
-                                  <td>{{user.placeName}}</td>
-                                  <td>{{user.email}}</td>
-                                  <td>{{user.phoneNo}}</td>
-                                  <td>{{user.fee}}</td>
-                                  <td>{{user.city}}</td>
-                                </tr>
-<?php
-
-$sel = mysqli_query($con,"select * from patient");
-$data = array();
-
-while ($row = mysqli_fetch_array($sel)) {
-    $data[] = array("firstName"=>$row['firstName'],"lastName"=>$row['lastName'],"placeName"=>$row['placeName'],
-        "email"=>$row['email'],"phoneNo"=>$row['phoneNo'],"fee"=>$row['fee'],"city"=>$row['city']);
-    echo json_encode($data);
-}
-// if ($result->num_rows > 0) {
-    
-//     while ($row = $result->fetch_assoc()) {
-//         echo '<tr>' . '<td>' . $row['firstName'] . '</td>' . '<td>' . $row['lastName'] . '</td>' . '<td>' . $row['placeName'] . '</td>' . '<td>' . $row['email'] . '</td>' . '<td>' 
-// 	    . $row['phoneNo'] . '</td>' . '<td>' . $row['fee'] . '</td>' . '<td>' . $row['timingFrom'] . ' - ' . $row['timingTo'] . '</td>' . '<td>' . $row['city'] . '</td>'.
-   
-// 				'<td>
-// 					<a class="btn btn-xs btn-sucess" href="scheduleAppointment.php?doctorId='.$row['id'].'" </a>
-// 									</td>
-// 									</tr>';
-//     }
-// } else {
-//     echo "0 results";
-// }
-?>
+	<?php 
+	
+	if ($result->num_rows > 0) {
+	    // output data of each row
+	    while($row = $result->fetch_assoc()) {
+	        echo "<tr> <td>".$row["firstName"] . "</td> </tr>";
+	    }
+	} else {
+	    echo "0 results";
+	}
+	
+	
+	?>
 								</tbody>
 							</table>
-							
-										<input name="title" class="col-md-12" type="text" placeholder="Add Title" />
-						<input name="description" class="col-md-12" type="text" placeholder="Add Description" style="height: 400px"/>
-						 
 					</div>
 				</div>
 			</div>

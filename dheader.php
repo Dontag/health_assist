@@ -1,6 +1,6 @@
 <?php include 'Actions.php';?>
 <?php
-if (! isset($_SESSION['username'])) {
+if (!isset($_SESSION['username'])) {
     header('location: index.php');
 }
 ?>
@@ -70,9 +70,9 @@ if (! isset($_SESSION['username'])) {
 										class="img-circle" height="40" width="40" alt="User Image">
 								</div>
 						</a>
-							<ul class="dropdown-menu">
-								<li><a href="profile.html"><i class="fa fa-users"></i> User
-										Profile</a></li>
+								<ul class="dropdown-menu">
+                                    <li><a href="index.php?logout='1'"><i class="fa fa-sign-out"></i> Logout</a></li>
+                                </ul>
 							</ul></li>
 					</ul>
 				</div>

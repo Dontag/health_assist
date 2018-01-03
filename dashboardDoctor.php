@@ -1,15 +1,5 @@
 <?php include 'dheader.php';?>
-<form action="index.html#" method="get"
-	class="sidebar-form search-box pull-right hidden-md hidden-lg hidden-sm">
-	<div class="input-group">
-		<input type="text" name="q" class="form-control"
-			placeholder="Search..."> <span class="input-group-btn">
-			<button type="submit" name="search" id="search-btn" class="btn">
-				<i class="fa fa-search"></i>
-			</button>
-		</span>
-	</div>
-</form>
+
 <div class="header-icon">
 	<i class="fa fa-tachometer"></i>
 </div>
@@ -17,7 +7,7 @@
 	<h1>Dashboard</h1>
 	<small> Dashboard features</small>
 	<ol class="breadcrumb hidden-xs">
-		<li><a href="index.html"><i class="pe-7s-home"></i>Home</a></li>
+		<li><a href="index.php"><i class="pe-7s-home"></i>Home</a></li>
 		<li class="active">Dashboard</li>
 	</ol>
 </div>

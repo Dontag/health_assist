@@ -98,16 +98,11 @@ if(!isset($_SESSION['username'])) {
                             <a href="appointmentsPatient.php"><i class="fa fa-hospital-o"></i><span>Appointments</span>
                             </a>
                         </li>
-                    
-                 
-               
-                
-                             
             </ul>
         </div> 
     </aside>
             
-            <div class="content-wrapper" ng-controller="myController">
+            <div class="content-wrapper">
             
                 <section class="content-header">
                     
