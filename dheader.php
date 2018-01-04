@@ -64,7 +64,7 @@ if (!isset($_SESSION['username'])) {
 				<div class="navbar-custom-menu">
 					<ul class="nav navbar-nav">
 						<li class="dropdown dropdown-user admin-user"><a
-							href="index.html#" class="dropdown-toggle" data-toggle="dropdown">
+							href="index.php#" class="dropdown-toggle" data-toggle="dropdown">
 								<div class="user-image">
 									<img src="assets/admin_page/dist/img/avatar4.png"
 										class="img-circle" height="40" width="40" alt="User Image">

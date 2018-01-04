@@ -20,7 +20,7 @@
 	<h1>Appointments</h1>
 	<small> Appointment features</small>
 	<ol class="breadcrumb hidden-xs">
-		<li><a href="index.html"><i class="pe-7s-home"></i> Home</a></li>
+		<li><a href="index.php"><i class="pe-7s-home"></i> Home</a></li>
 		<li class="active">Appointment</li>
 	</ol>
 </div>

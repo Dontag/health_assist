@@ -37,7 +37,7 @@ function myFunction() {
 	<h1>Dashboard</h1>
 	<small> Dashboard features</small>
 	<ol class="breadcrumb hidden-xs">
-		<li><a href="index.html"><i class="pe-7s-home"></i>Home</a></li>
+		<li><a href="index.php"><i class="pe-7s-home"></i>Home</a></li>
 		<li class="active">Dashboard</li>
 	</ol>
 </div>
